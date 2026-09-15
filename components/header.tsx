@@ -39,7 +39,7 @@ export default function Header() {
         {/* CTA button */}
         <Link
           href="/registration"
-          className="rounded-md bg-[#F5C518] px-6 py-3 text-[15px] font-semibold text-[#0B1F5C] hover:brightness-95 transition"
+          className="rounded-md bg-[#FFCC00] px-6 py-3 text-[15px] font-semibold text-[#0B1F5C] hover:brightness-95 transition"
         >
           Registration Form
         </Link>

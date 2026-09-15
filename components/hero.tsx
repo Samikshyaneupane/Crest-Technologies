@@ -11,19 +11,20 @@ const slides = [
 
 const heroTexts = [
   {
+    title: "Elevate Your Skills, Accelerate Your Career",
+    description:
+      "Maximize your career opportunities with our new age skill programs, designed to ensure you're job-ready from day one.",
+  },
+ 
+  {
     title: "Learn from Industry Experts",
     description:
       "Get hands-on experience with real-world projects guided by experienced professionals.",
   },
-  {
-    title: "Future Ready Curriculum",
+   {
+    title: "Future Ready Training",
     description:
       "Stay ahead with cutting-edge curriculum designed for tomorrow's technology needs.",
-  },
-  {
-    title: "Build Real Projects",
-    description:
-      "Work on practical assignments guided by experienced industry mentors.",
   },
 ];
 
@@ -35,7 +36,7 @@ export default function Hero() {
   useEffect(() => {
     const timer = setInterval(() => {
       setIndex((i) => (i + 1) % slides.length);
-    }, 2500);
+    }, 1500);
 
     return () => clearInterval(timer);
   }, []);
@@ -44,7 +45,7 @@ export default function Hero() {
   useEffect(() => {
     const timer = setInterval(() => {
       setTextIndex((i) => (i + 1) % heroTexts.length);
-    }, 2500);
+    }, 1500);
 
     return () => clearInterval(timer);
   }, []);
@@ -54,7 +55,7 @@ export default function Hero() {
   return (
     <>
       {/* IAO Banner */}
-      <section className="w-full border-b border-[#D9EAF8] bg-[#A9D2F7]">
+      <section className="w-full border-b border-[#D9EAF8] bg-[#99CDFF]">
         <div className="flex w-full items-center justify-between px-6 py-0">
 
           <p className="whitespace-nowrap text-base font-medium text-[#0B1F5C] md:text-lg">
@@ -77,7 +78,7 @@ export default function Hero() {
 
 
       {/* Hero Section */}
-      <section className="w-full bg-[#F5F5F5]">
+      <section className="w-full bg-white">
         <div className="mx-auto grid max-w-7xl items-center gap-10 px-6 py-16 md:grid-cols-2">
 
 
@@ -94,14 +95,14 @@ export default function Hero() {
 
 
             {/* Trustpilot */}
-            <div className="mt-6 flex items-center gap-2 text-[#1A1A1A]">
+            <div className="mt-6 flex items-center gap-2 text-[#1A1A1A] sm:text-2xl ">
 
               <span className="text-[#00B67A]">
                 ★
               </span>
 
-              <span className="font-medium">
-                Trustpilot 4.5
+              <span className="font-medium-bold text-[#1A1A1A]">
+               Trustpilot <b>4.5</b> 
               </span>
 
               <span className="text-[#F5C518]">
