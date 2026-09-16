@@ -8,32 +8,32 @@ const faqs = [
   {
     question: "What are the qualifications required to do the course?",
     answer:
-      "The qualification requirements depend on the course you choose. Our team can help you select the right program based on your background.",
+      "Basic computer knowledge and a strong willingness to learn are the primary requirements. Specific courses may have additional prerequisites which will be mentioned in the course details. ",
   },
   {
     question: "Is the course theoretical or practical?",
     answer:
-      "Our courses combine theoretical knowledge with practical, hands-on learning.",
+      "Our courses are designed with a balanced mix of both theoretical concepts and practical applications. We emphasize hands-on learning with real-world projects and exercises.",
   },
   {
     question: "Who will be the trainer for the classroom training?",
     answer:
-      "Training is provided by experienced professionals with relevant industry expertise.",
+      "Our trainers are industry experts with extensive practical experience in their respective fields. They are carefully selected based on their expertise and teaching abilities.",
   },
   {
     question: "What are Live Projects Training?",
     answer:
-      "Live project training allows students to apply their skills to practical, real-world projects.",
+      "Live Projects Training involves working on real-world projects under the guidance of industry experts. This helps students gain practical experience and build a strong portfolio.",
   },
   {
     question: "Is there any project supported with the course?",
     answer:
-      "Yes. Selected courses include projects designed to provide practical experience.",
+      "Yes, all our courses include multiple projects. You'll work on both individual and group projects to apply your learning and build a portfolio.",
   },
   {
     question: "Do you provide placement assistance?",
     answer:
-      "Yes. Placement assistance includes career guidance, interview preparation and support in connecting with potential employers.",
+      "Yes, we provide comprehensive placement assistance including resume building, interview preparation, and connections with our hiring partners.",
   },
 ];
 
@@ -49,8 +49,8 @@ export default function FAQs() {
       <div className="mx-auto grid max-w-[1200px] gap-6 lg:grid-cols-2">
 
         {/* LEFT FAQ CARD */}
-        <div className="rounded-md bg-[#91c4f3] px-5 py-5 shadow-md">
-          <h2 className="mb-5 text-3xl font-bold text-[#172033] md:text-4xl">
+        <div className="rounded-md bg-[#99CDFF] px-5 py-5 shadow-md">
+          <h2 className="mb-5 text-4xl font-bold text-[#172033] md:text-4xl">
             FAQs
           </h2>
 
@@ -85,7 +85,7 @@ export default function FAQs() {
             ))}
           </div>
 
-          <button className="mt-6 rounded-full bg-[#ffd000] px-6 py-2 text-[16px] text-black transition hover:bg-[#f4c400]">
+          <button className="mt-6 rounded-full bg-[#FFCC00]  px-6 py-2 text-[16px] text-[292929] transition hover:bg-transparent hover:text-blue-500 hover:border hover:border-blue-500">
             For more information contact
           </button>
         </div>
@@ -93,22 +93,22 @@ export default function FAQs() {
         {/* RIGHT CORPORATE TRAINING CARD */}
         <div className="relative min-h-[405px] overflow-hidden rounded-md shadow-md">
           <Image
-            src="/corporate-training.jpg"
+            src="/faq.jpg"
             alt="Corporate Training"
             fill
             className="object-cover grayscale"
           />
 
-          {/* White transparent layer like screenshot */}
-          <div className="absolute inset-0 bg-white/35" />
+          {/* White transparent layer */}
+          <div className="absolute inset-0 bg-white/50" />
 
           {/* Content */}
           <div className="relative z-10 flex h-full min-h-[405px] flex-col px-8 py-7">
-            <div className="w-fit rounded-md bg-[#001b67] px-3 py-2 text-[12px] font-bold text-white shadow">
+            <div className="w-fit rounded-md  bg-[#00135C] px-3 py-2 text-[12px] font-bold text-white shadow-md">
               CORPORATE TRAINING
             </div>
 
-            <h2 className="mt-12 max-w-[300px] text-4xl font-bold leading-[0.98] text-[#001b67]">
+            <h2 className="mt-12 max-w-[300px] text-4xl font-bold leading-[0.98] text-[#00135C] ">
               Work place
               <br />
               Learning that
@@ -116,7 +116,7 @@ export default function FAQs() {
               Works
             </h2>
 
-            <p className="mt-5 max-w-[330px] text-[17px] leading-6 text-[#222]">
+            <p className="mt-5 max-w-[330px] text-[17px] leading-6 text-[#292929]">
               Skill your workforce in new age
               <br />
               technologies with our cutting edge
@@ -124,7 +124,7 @@ export default function FAQs() {
               curriculum.
             </p>
 
-            <button className="mt-6 w-fit rounded-full bg-[#ff5757] px-4 py-1.5 text-[16px] text-white transition hover:bg-[#f04444]">
+            <button className="mt-6 w-fit rounded-full bg-[#FF5757] px-4 py-1.5 text-[19px] text-white transition rounded-3xl hover:bg-transparent hover:text-blue-500 hover:border hover:border-blue-500">
               Connect with us
             </button>
           </div>

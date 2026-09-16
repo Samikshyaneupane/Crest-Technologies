@@ -19,9 +19,9 @@ export default function Header() {
     src="/logo.png"
     alt="CREST Technologies"
     width={65}
-    height={30}
+    height={40}
     priority
-    className="h-auto w-auto"
+    className="h-auto w-auto px-[50px] py-[5px]"
   />
 </Link>
         <nav className="hidden items-center gap-8 md:flex">
@@ -29,7 +29,7 @@ export default function Header() {
     <Link
       key={link.href}
       href={link.href}
-      className="text-[15px] font-medium text-[#333333] hover:text-[#3B7DDE] transition-colors"
+      className="text-[18px] font-medium text-[#333333] hover:text-[#3B7DDE] transition-colors"
     >
       {link.label}
     </Link>
@@ -39,7 +39,7 @@ export default function Header() {
         {/* CTA button */}
         <Link
           href="/registration"
-          className="rounded-md bg-[#FFCC00] px-6 py-3 text-[15px] font-semibold text-[#0B1F5C] hover:brightness-95 transition"
+          className="rounded-md bg-[#FFCC00] px-6 py-3 text-[18px]  text-[#292929] hover:bg-yellow-400 hover:brightness-95 transition"
         >
           Registration Form
         </Link>

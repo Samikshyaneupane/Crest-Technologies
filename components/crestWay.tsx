@@ -10,26 +10,26 @@ const crestWay = [
   {
     icon: BookOpen,
     image: "",
-    title: "jshjs",
-    text: "kdkdm",
+    title: "LEARN",
+    text: "Mentored online learning",
   },
   {
     icon: CircleCheckBig,
     image: "",
-    title: "",
-    text: "",
+    title: "PRACTICE",
+    text: "Material for easy learning",
   },
   {
     icon: Users,
     image: "",
-    title: "",
-    text: "",
+    title: "APPLY",
+    text: "Assignments for first-hand experience",
   },
   {
     icon: null,
     image: "/image.png",
-    title: "",
-    text: "",
+    title: "ASSESSMENT",
+    text: "Personalized progress assessment and feedback",
   },
 ];
 
@@ -80,8 +80,8 @@ export default function CrestWay() {
             The Crest Way
           </h2>
 
-          <p className="mb-8 max-w-[330px] pb-7 text-[14px] leading-[1.55] text-black">
-            Learning methodology that focuses on learner&apos;s holistic growth
+          <p className="mb-8 max-w-[330px] pb-7 text-[16px] leading-[1.55] font-semi-bold text-black">
+            Learning methodology that focuses on learner&apos;s  holistic growth
             and delivers domain-specific information
           </p>
 
@@ -132,7 +132,8 @@ export default function CrestWay() {
 
           </div>
 
-          <button className="mt-12 rounded-full bg-[#1677f2] px-7 py-2 text-[16px] text-white transition hover:bg-[#0866d9]">
+          <button className="mt-12 rounded-full bg-[#1A71E9] px-7 py-2 text-[20px] text-white transition hover:bg-[#ffc20e] hover:text-[#1A71E9] hover:border hover:border-[#1A71E9]
+         >">
             Our Approach
           </button>
 
@@ -157,7 +158,7 @@ export default function CrestWay() {
                 <Image
                   src={item.image}
                   alt={item.title || "Crest Advantage"}
-                  width={35}
+                  width={30}
                   height={35}
                   className="mt-1 shrink-0 object-contain"
                 />
@@ -166,7 +167,7 @@ export default function CrestWay() {
                   <h3 className="text-[18px] font-bold text-[#001b67]">
                     {item.title}
                   </h3>
-
+  
                   <p className="mt-2 text-[14px] leading-[1.55] text-black">
                     {item.text}
                   </p>
