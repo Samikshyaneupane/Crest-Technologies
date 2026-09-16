@@ -74,9 +74,9 @@ export default function CrestWay() {
       <div className="mx-auto flex max-w-[1200px] flex-col lg:min-h-[500px] lg:flex-row">
 
         {/* LEFT - THE CREST WAY */}
-        <div className="rounded-md bg-[#ffc20e] px-7 py-10 lg:w-[40%]">
+        <div className="rounded-md bg-[#ffc20e] px-9 py-10 lg:w-[40%]">
 
-          <h2 className="mb-9 text-3xl font-bold text-[#111827] md:text-4xl">
+          <h2 className="mb-9 mt-6 text-3xl font-bold text-[#111827] md:text-4xl ">
             The Crest Way
           </h2>
 
@@ -142,7 +142,7 @@ export default function CrestWay() {
         {/* RIGHT - THE CREST ADVANTAGE */}
         <div className="bg-white px-6 py-7 lg:w-[60%] lg:px-8">
 
-          <h2 className="mb-7 text-3xl font-bold text-[#111827] md:text-4xl">
+          <h2 className="mb-9 text-3xl font-bold text-[#111827] md:text-4xl">
             The Crest Advantage
           </h2>
 

@@ -28,7 +28,7 @@ export default function Header() {
   {navLinks.map((link) => (
     <Link
       key={link.href}
-      href={link.href}
+      href={link.href} 
       className="text-[18px] font-medium text-[#333333] hover:text-[#3B7DDE] transition-colors"
     >
       {link.label}
@@ -39,7 +39,7 @@ export default function Header() {
         {/* CTA button */}
         <Link
           href="/registration"
-          className="rounded-md bg-[#FFCC00] px-6 py-3 text-[18px]  text-[#292929] hover:bg-yellow-400 hover:brightness-95 transition"
+          className="rounded-md bg-[#FFCC00] px-8 py-3 text-[18px]  text-[#292929] hover:bg-yellow-400 "
         >
           Registration Form
         </Link>
