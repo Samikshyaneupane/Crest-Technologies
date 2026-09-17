@@ -124,7 +124,7 @@ export default function FAQs() {
               curriculum.
             </p>
 
-            <button className="mt-6 w-fit rounded-full bg-[#FF5757] px-4 py-1.5 text-[19px] text-white transition rounded-3xl hover:bg-transparent hover:text-blue-500  hover:border-blue-500">
+            <button className="mt-6 w-fit rounded-full bg-[#FF5757] px-4 py-1.5 text-[19px] text-white transition rounded-3xl hover:bg-transparent hover:text-blue-500 hover:border hover:border-blue-500">
               Connect with us
             </button>
           </div>

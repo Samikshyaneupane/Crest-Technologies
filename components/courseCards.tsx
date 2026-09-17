@@ -87,7 +87,7 @@ export default function CourseCards() {
       <div className="flex justify-center pt-16">
         <Link
   href="/courses"
-  className="inline-block whitespace-nowrap rounded-lg border-2 border-[#3B7DDE] bg-[#3B7DDE] px-10 py-3 text-base font-semibold text-white transition duration-300 hover:bg-white hover:text-[#3B7DDE]"
+  className="inline-block whitespace-nowrap rounded-2xl border-2 border-[#3B7DDE] bg-[#3B7DDE] px-10 py-3 text-base font-semibold text-white transition duration-300 hover:bg-white hover:text-[#3B7DDE]"
 >
   Discover More
 </Link>
