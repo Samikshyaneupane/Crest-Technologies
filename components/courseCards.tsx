@@ -37,8 +37,8 @@ const courses = [
 
 export default function CourseCards() {
   return (
-    <section className="bg-white py-16">
-    <div className="mx-auto grid max-w-7xl gap-3.5 px-6 grid-cols-1 sm:grid-cols-3">
+    <section id="courses" className="scroll-mt-20 bg-white py-16">
+      <div className="mx-auto grid max-w-7xl grid-cols-1 gap-3.5 px-6 sm:grid-cols-3">
         {courses.map((course) => (
           <div
             key={course.title}

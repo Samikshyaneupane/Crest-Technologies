@@ -18,7 +18,7 @@ const partners = [
   },
   {
     name:"Yuwasoft",
-    image:"/partners/yuwasoft.png",
+    image:"/partners/yuwasoft.svg",
   },
   {
     name:"Eeposit",

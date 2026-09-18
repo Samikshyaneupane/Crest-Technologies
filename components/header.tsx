@@ -2,7 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 
 const navLinks = [
-  { label: "Courses", href: "/courses" },
+  { label: "Courses", href: "/#courses" },
   { label: "Corporate", href: "/corporate" },
   { label: "College to Corporate", href: "/college-to-corporate" },
   { label: "About Us", href: "/about" },
