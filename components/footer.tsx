@@ -14,7 +14,7 @@ export default function Footer() {
           
 
           <div>
-            <h2 className="mb- mt-3 pl-[2px] text-[36px] font-bold leading-none">
+            <h2 className="mb-3 mt-3 pl-[2px] text-[36px] font-bold leading-none">
               CREST
             </h2>
 
