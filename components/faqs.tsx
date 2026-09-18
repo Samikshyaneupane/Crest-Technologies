@@ -53,7 +53,7 @@ export default function FAQs() {
 
   return (
     <>
-      {/* ================= FAQ SECTION ================= */}
+      {/* FAQ SECTION  */}
 
       <section className="bg-[#f5f6f7] px-3 py-5">
         <div className="mx-auto grid max-w-[1200px] gap-6 lg:grid-cols-2">
@@ -106,7 +106,7 @@ export default function FAQs() {
             </button>
           </div>
 
-          {/* ================= RIGHT CORPORATE CARD ================= */}
+          {/* RIGHT CORPORATE CARD  */}
 
           <div className="relative min-h-[405px] overflow-hidden rounded-md shadow-md">
             <Image
