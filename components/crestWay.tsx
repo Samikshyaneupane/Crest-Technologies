@@ -35,32 +35,32 @@ const crestWay = [
 
 const crestAdvantage = [
   {
-    image: "/crestad1.png",
+    image: "/crestad/crestad1.png",
     title: "LIVE OR PHYSICAL CLASSES",
     text: "Attend classes as per your convenience online or physical. Online classes are scheduled at evening time for students or professionals' convenience.",
   },
   {
-    image: "/crestad2.png",
+    image: "/crestad/crestad2.png",
     title: "INDUSTRY STANDARD CURRICULUM",
     text: "Validated by industry experts and meticulously structured. One of the best world wide curriculum with focus to ensure excellence.",
   },
   {
-    image: "/crestad3.png",
+    image: "/crestad/crestad3.png",
     title: "MULTIPLE PROJECTS",
     text: "Get hands-on experience with multiple projects to enhance your skills. Believe by seeing your own work.",
   },
   {
-    image: "/crestad4.png",
+    image: "/crestad/crestad4.png",
     title: "INDUSTRY READINESS",
     text: "Resume preparation, career counselling, skill enhancement workshops, mock interviews, soft skills training, Industry networking.",
   },
   {
-    image: "/crestad5.png",
+    image: "/crestad/crestad5.png",
     title: "PLACEMENT ASSISTANCE",
     text: "Actively assist students in securing suitable employment opportunities by connecting with potential employers.",
   },
   {
-    image: "/crestad6.png",
+    image: "/crestad/crestad6.png",
     title: "IAO CERTIFICATION ACCREDITATION",
     text: "Get international accredited certification with online links.",
   },
