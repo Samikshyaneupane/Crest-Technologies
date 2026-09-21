@@ -174,9 +174,7 @@ export default function Testimonials() {
   );
 }
 
-/* ============================= */
 /* REVIEW CARD */
-/* ============================= */
 
 function ReviewCard({
   review,

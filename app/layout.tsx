@@ -7,6 +7,7 @@ import { Providers } from "./providers";
 import { siteConfig } from "@/config/site";
 import { fontSans } from "@/config/fonts";
 import Header from "@/components/header";
+import Footer from "@/components/footer";
 
 export const metadata: Metadata = {
   title: {
@@ -41,11 +42,18 @@ export default function RootLayout({
       >
         <Providers themeProps={{ attribute: "class", defaultTheme: "light" }}>
           <div className="relative flex min-h-screen flex-col">
+
+            {/* HEADER - EVERY PAGE */}
             <Header />
 
+            {/* PAGE CONTENT */}
             <main className="flex-grow pt-16">
               {children}
             </main>
+
+            {/* FOOTER + FLOATING WHATSAPP - EVERY PAGE */}
+            <Footer />
+
           </div>
         </Providers>
       </body>

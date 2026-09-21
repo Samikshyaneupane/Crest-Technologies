@@ -14,10 +14,9 @@ export default function Footer() {
           
 
           <div>
-            <h2 className="mb-3 mt-3 pl-[2px] text-[36px] font-bold leading-none">
+            <h2 className="mb-5 mt-3 pl-[2px] text-[36px] font-bold leading-none">
               CREST
             </h2>
-
             <p className="max-w-[250px] text-[14px] leading-[1.4]">
             CREST Technologies is an 
             <br/>
@@ -104,12 +103,12 @@ export default function Footer() {
            <div>
             <Link
               href="/contact"
-              className="mb-3 block text-[17px] transition hover:text-gray-300"
+              className="mb-1 mt-7 block text-[17px] transition hover:text-gray-300"
             >
               Contact
             </Link>
 
-            <p className="mb-3 text-[17px]">
+            <p className="mb-3 mt-3 text-[17px]">
               Connect with us
             </p>
 

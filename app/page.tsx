@@ -5,7 +5,7 @@ import CrestWay from "@/components/crestWay";
 import FAQs from "@/components/faqs";
 import Testimonials from "@/components/testimonials";
 import HiringPartners from "@/components/hiringPartners";
-import Footer from "@/components/footer";
+
 
 export default function Home() {
   return (
@@ -17,7 +17,8 @@ export default function Home() {
       <FAQs/>
      <Testimonials/>
      <HiringPartners/>
-     <Footer/>
+     
+    
     
     </>
   );
