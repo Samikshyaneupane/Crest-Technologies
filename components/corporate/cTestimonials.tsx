@@ -55,7 +55,7 @@ export default function CorporateTestimonials() {
 
         return current + direction;
       });
-    }, 10000);
+    }, 1200);
 
     return () => clearInterval(timer);
   }, [direction, maxIndex]);

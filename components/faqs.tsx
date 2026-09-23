@@ -58,7 +58,7 @@ export default function FAQs() {
       <section className="bg-[#f5f6f7] px-3 py-5">
         <div className="mx-auto grid max-w-[1200px] gap-6 lg:grid-cols-2">
 
-          {/* ================= LEFT FAQ CARD ================= */}
+          {/*  LEFT FAQ CARD  */}
 
           <div className="rounded-md bg-[#99CDFF] px-5 py-5 shadow-md">
             <h2 className="mb-5 text-4xl font-bold text-[#172033]">
@@ -284,14 +284,14 @@ export default function FAQs() {
               {/* TITLE */}
 
               <h2 className="pr-20 text-3xl font-bold text-[#292929]">
-                Ready
+                Ready to Get Started
               </h2>
 
               <p className="mt-2 text-[14px] text-[#475569]">
-                Your .
+                Your E-mail address will not be published.
               </p>
 
-              {/* ================= FORM ================= */}
+              {/*  FORM  */}
 
               <form
                 className="mt-5 space-y-3"

@@ -1,9 +1,19 @@
-export default function AboutPage() {
+import AboutCTA from "@/components/about/AboutCTA";
+import AboutHero from "@/components/about/AboutHero";
+import AccreditationCertificate from "@/components/about/AccreditationCertificate";
+import GlobalExcellence from "@/components/about/GlobalExcellence";
+import MissionVision from "@/components/about/MissionVision";
+import WhoWeAre from "@/components/about/WhoWeAre";
+export default function CollegeToCorporatePage() {
   return (
     <main>
-      <h1 className="text-4xl font-bold text-[#07175C]">
-        About Us
-      </h1>
+      <AboutHero/>
+      <WhoWeAre/>
+      <MissionVision/>
+     <GlobalExcellence/>
+     <AccreditationCertificate/>
+     <AboutCTA/>
+
     </main>
   );
 }
