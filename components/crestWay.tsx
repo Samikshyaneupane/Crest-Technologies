@@ -132,7 +132,7 @@ export default function CrestWay() {
 
           </div>
 
-          <button className="mt-12 rounded-full bg-[#1A71E9] px-7 py-2 text-[20px] text-white transition hover:bg-[#ffc20e] hover:text-[#1A71E9] hover:border hover:border-[#1A71E9]
+          <button className="w-[180px] md:w-[220px] h-[48px] md:h-[53px] text-lg md:text-xl lg:text-[24px] leading-tight tracking-[0] mt-12 md:mt-16 px-[6px] py-[12px] bg-[#1A71E9] text-white rounded-3xl hover:bg-transparent hover:border hover:border-[#1A71E9] hover:text-[#1A71E9]
          >">
             Our Approach
           </button>

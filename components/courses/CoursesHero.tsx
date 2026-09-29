@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function CoursesHero() {
   return (
-    <section className=" font-myriad relative h-[550px] w-full overflow-hidden">
+    <section className="font-myriad relative h-[550px] w-full overflow-hidden">
       {/* BACKGROUND IMAGE */}
       <Image
         src="/Courses/courseHero.webp"
@@ -29,12 +29,15 @@ export default function CoursesHero() {
             Our Courses
           </h1>
 
-          <p className="text-lg md:text-xl">
+          <p className="mt-4 text-lg md:text-xl">
             Master the skills to build fast, responsive, and scalable web
             applications using ReactJS. This beginner-friendly to advanced
             course offers hands-on experience, expert mentorship, and career
             support to make you job-ready in just 10 weeks.
           </p>
+
+   
+        
         </div>
       </div>
     </section>

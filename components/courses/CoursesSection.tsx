@@ -19,7 +19,7 @@ const courses = [
       "Master modern web development with ReactJS. Learn component-based architecture, state management, and build responsive applications.",
     duration: "10 Weeks",
     image: "/courses/reactjs.png",
-    href: "/courses/reactjs.png",
+    href: "/courses/frontend-development-with-reactjs",
     category: "Development",
   },
   {

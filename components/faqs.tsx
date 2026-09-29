@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import Link from "next/link";
 import Image from "next/image";
 import {
   ChevronDown,
@@ -143,9 +144,14 @@ export default function FAQs() {
                 curriculum.
               </p>
 
-              <button className="mt-6 w-fit rounded-full border border-transparent bg-[#FF5757] px-4 py-1.5 text-[19px] text-white transition hover:border-blue-500 hover:bg-transparent hover:text-blue-500">
-                Connect with us
-              </button>
+             
+              <Link
+  href="/corporate"
+  prefetch={false}
+  className="mt-6 w-fit rounded-full border border-transparent bg-[#FF5757] px-4 py-1.5 text-[19px] text-white transition hover:border-blue-500 hover:bg-transparent hover:text-blue-500"
+>
+  Connect with us
+</Link>
             </div>
           </div>
         </div>

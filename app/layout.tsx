@@ -22,8 +22,14 @@ export const metadata: Metadata = {
 
 export const viewport: Viewport = {
   themeColor: [
-    { media: "(prefers-color-scheme: light)", color: "white" },
-    { media: "(prefers-color-scheme: dark)", color: "black" },
+    {
+      media: "(prefers-color-scheme: light)",
+      color: "white",
+    },
+    {
+      media: "(prefers-color-scheme: dark)",
+      color: "black",
+    },
   ],
 };
 
@@ -35,25 +41,24 @@ export default function RootLayout({
   return (
     <html suppressHydrationWarning lang="en">
       <body
+        suppressHydrationWarning
         className={clsx(
           "min-h-screen bg-background text-foreground font-sans antialiased",
           fontSans.variable
         )}
       >
-        <Providers themeProps={{ attribute: "class", defaultTheme: "light" }}>
+        <Providers
+          themeProps={{
+            attribute: "class",
+            defaultTheme: "light",
+          }}
+        >
           <div className="relative flex min-h-screen flex-col">
-
-            {/* HEADER - EVERY PAGE */}
             <Header />
 
-            {/* PAGE CONTENT */}
-            <main className="flex-grow pt-16">
-              {children}
-            </main>
+            <main className="flex-grow">{children}</main>
 
-            {/* FOOTER + FLOATING WHATSAPP - EVERY PAGE */}
             <Footer />
-
           </div>
         </Providers>
       </body>
