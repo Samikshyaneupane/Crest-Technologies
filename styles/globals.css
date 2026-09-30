@@ -3,7 +3,19 @@
 
 @custom-variant dark (&:is(.dark *));
 
+@font-face {
+  font-family: "Myriad Pro";
+  src: url("/fonts/MyriadPro/MyriadPro-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
 @theme {
-	--font-sans: "font", sans-serif;
-	--font-mono: "monospace", monospace;
+  --font-sans: "Inter", "Poppins", sans-serif;
+  --font-mono: "monospace", monospace;
+}
+
+.font-myriad {
+  font-family: "Myriad Pro", sans-serif;
 }

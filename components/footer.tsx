@@ -4,121 +4,120 @@ import Link from "next/link";
 export default function Footer() {
   return (
     <>
-    
-
       <footer className="bg-[#272727] text-white">
-        
-
-        <div className="mx-auto grid max-w-[1710px] grid-cols-1 gap-8 px-10 py-5 md:grid-cols-2 lg:grid-cols-5 lg:px-4">
-
-          
-
-          <div>
-            <h2 className="mb- mt-3 pl-[2px] text-[36px] font-bold leading-none">
+        {/* MAIN FOOTER */}
+        <div
+          className="
+            mx-auto grid max-w-[1710px]
+            grid-cols-1
+            gap-10
+            px-6 py-10
+            sm:grid-cols-2 sm:px-8
+            md:grid-cols-3
+            lg:grid-cols-5 lg:gap-8 lg:px-10 lg:py-8
+            xl:px-12
+          "
+        >
+          {/* COLUMN 1 - CREST */}
+          <div className="text-center sm:text-left">
+            <h2 className="mb-5 text-[32px] font-bold leading-none sm:text-[34px] lg:text-[36px]">
               CREST
             </h2>
 
-            <p className="max-w-[250px] text-[14px] leading-[1.4]">
-            CREST Technologies is an 
-            <br/>
-            upskilling platform in nepal
-            <br/>
-            that provides Live Online
-            <br/>
-            classes,Online & Physical 
-            <br/>
-            Training Classes
+            <p className="mx-auto max-w-[280px] text-[14px] leading-[1.6] text-gray-200 sm:mx-0">
+              CREST Technologies is an upskilling platform in Nepal that
+              provides Live Online classes, Online & Physical Training Classes.
             </p>
           </div>
 
-          {/*  COLUMN 2 - ACCREDITED BY  */}
-
-          <div>
-            <h3 className="mb-2 mt-3 text-[20px] font-bold">
+          {/* COLUMN 2 - ACCREDITED BY */}
+          <div className="text-center sm:text-left">
+            <h3 className="mb-5 text-[18px] font-bold lg:text-[20px]">
               ACCREDITED BY
             </h3>
 
-         <div className="flex h-[90px] w-[90px] items-center justify-center rounded-full bg-white mx-9 my-4 ">
-  <Image
-    src="/iao-seal.png"
-    alt="IAO Accreditation"
-    width={40}
-    height={60}
-    className="h-[80px] w-[80px] object-contain"
-  />
-</div>
+            <div className="mx-auto flex h-[90px] w-[90px] items-center justify-center rounded-full bg-white sm:mx-0">
+              <Image
+                src="/iao-seal.png"
+                alt="IAO Accreditation"
+                width={80}
+                height={80}
+                className="h-[80px] w-[80px] object-contain"
+              />
+            </div>
           </div>
 
-          {/*  COLUMN 3 - COURSES*/}
- 
-           <div className="space-y-3">
-             <Link
-               href="/courses"
-               className="block text-[17px] transition hover:text-gray-300 mt-7 mb-1"
-             >
+          {/* COLUMN 3 - COURSES */}
+          <div className="space-y-3 text-center sm:text-left">
+            <Link
+              href="/courses"
+              prefetch={false}
+              className="block text-[16px] transition hover:text-gray-300 lg:text-[17px]"
+            >
               Courses
             </Link>
 
             <Link
               href="/college-to-corporate"
-              className="block text-[17px] transition hover:text-gray-300 my-1"
+              prefetch={false}
+              className="block text-[16px] transition hover:text-gray-300 lg:text-[17px]"
             >
               College to Corporate
             </Link>
 
             <Link
               href="/corporate-training"
-              className="block text-[17px] transition hover:text-gray-300"
-            > 
+              prefetch={false}
+              className="block text-[16px] transition hover:text-gray-300 lg:text-[17px]"
+            >
               Corporate Training
             </Link>
-          </div> 
+          </div>
 
-          {/*  COLUMN 4 - ABOUT */}
-
-          <div className="space-y-3">
+          {/* COLUMN 4 - ABOUT */}
+          <div className="space-y-3 text-center sm:text-left">
             <Link
               href="/about"
-              className="block text-[17px] transition hover:text-gray-300 mt-7 mb-1"
+              prefetch={false}
+              className="block text-[16px] transition hover:text-gray-300 lg:text-[17px]"
             >
               About us
             </Link>
 
             <Link
               href="/about#accreditation"
-              className="block text-[17px] transition hover:text-gray-300 mb-1"
+              prefetch={false}
+              className="block text-[16px] transition hover:text-gray-300 lg:text-[17px]"
             >
               Accreditation
             </Link>
 
             <Link
               href="/verify"
-              className="block text-[17px] transition hover:text-gray-300 mt-1"
+              prefetch={false}
+              className="block text-[16px] transition hover:text-gray-300 lg:text-[17px]"
             >
               Verify Credentials
             </Link>
-          </div> 
+          </div>
 
-          {/*  COLUMN 5 - CONTACT  */}
-
-           <div>
+          {/* COLUMN 5 - CONTACT */}
+          <div className="text-center sm:text-left">
             <Link
               href="/contact"
-              className="mb-3 block text-[17px] transition hover:text-gray-300"
+              prefetch={false}
+              className="block text-[16px] transition hover:text-gray-300 lg:text-[17px]"
             >
               Contact
             </Link>
 
-            <p className="mb-3 text-[17px]">
+            <p className="mb-4 mt-4 text-[16px] lg:text-[17px]">
               Connect with us
             </p>
 
-            {/* SOCIAL ICONS  */}
-
-            <div className="flex items-center gap-4 text-[#9ca3af]"> 
-
+            {/* SOCIAL ICONS */}
+            <div className="flex items-center justify-center gap-4 text-[#9ca3af] sm:justify-start">
               {/* FACEBOOK */}
-
               <a
                 href="#"
                 aria-label="Facebook"
@@ -134,7 +133,6 @@ export default function Footer() {
               </a>
 
               {/* INSTAGRAM */}
-
               <a
                 href="#"
                 aria-label="Instagram"
@@ -150,7 +148,6 @@ export default function Footer() {
               </a>
 
               {/* LINKEDIN */}
-
               <a
                 href="#"
                 aria-label="LinkedIn"
@@ -164,46 +161,60 @@ export default function Footer() {
                   <path d="M20.45 20.45h-3.56v-5.57c0-1.33-.03-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.34V8.98h3.42v1.57h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.29ZM5.32 7.41a2.07 2.07 0 1 1 0-4.14 2.07 2.07 0 0 1 0 4.14ZM7.1 20.45H3.54V8.98H7.1v11.47Z" />
                 </svg>
               </a>
-
             </div>
-           </div> 
-         </div> 
+          </div>
+        </div>
 
-        {/* BOTTOM FOOTER  */}
-
+        {/* BOTTOM FOOTER */}
         <div className="border-t border-gray-500">
-          <div className="mx-auto flex  min-h-[75px] max-w-[1710px] flex-col items-center justify-center gap-4 px-10 py-2 text-[15px] md:flex-row md:gap-14">
-
-            <p>
-              © 2026 - Crest Technologies. All rights reserved
-            </p>
+          <div
+            className="
+              mx-auto flex max-w-[1710px]
+              flex-col items-center justify-center
+              gap-3
+              px-6 py-5
+              text-center text-[13px]
+              sm:text-[14px]
+              md:min-h-[75px] md:flex-row md:gap-10 md:py-2
+              lg:text-[15px]
+            "
+          >
+            <p>© 2026 - Crest Technologies. All rights reserved</p>
 
             <Link
               href="/privacy-policy"
+              prefetch={false}
               className="transition hover:text-gray-300"
             >
               Privacy Policy
             </Link>
-
           </div>
         </div>
       </footer>
 
-      {/* floating whatsapp button */}
-
+      {/* FLOATING WHATSAPP BUTTON */}
       <a
         href="https://wa.me/9779857084388"
         target="_blank"
         rel="noopener noreferrer"
         aria-label="Chat on WhatsApp"
-        className="fixed bottom-4 right-4 z-50 transition-transform duration-200 hover:scale-105"
+        className="
+          fixed bottom-4 right-4 z-50
+          transition-transform duration-200
+          hover:scale-105
+          sm:bottom-5 sm:right-5
+        "
       >
         <Image
           src="/whatsapp.svg"
           alt="WhatsApp"
           width={65}
           height={65}
-          className="h-[65px] w-[65px] object-contain"
+          className="
+            h-[52px] w-[52px] object-contain
+            sm:h-[58px] sm:w-[58px]
+            lg:h-[65px] lg:w-[65px]
+          "
         />
       </a>
     </>

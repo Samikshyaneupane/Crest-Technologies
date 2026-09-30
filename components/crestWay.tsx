@@ -35,32 +35,32 @@ const crestWay = [
 
 const crestAdvantage = [
   {
-    image: "/crestad1.png",
+    image: "/crestad/crestad1.png",
     title: "LIVE OR PHYSICAL CLASSES",
     text: "Attend classes as per your convenience online or physical. Online classes are scheduled at evening time for students or professionals' convenience.",
   },
   {
-    image: "/crestad2.png",
+    image: "/crestad/crestad2.png",
     title: "INDUSTRY STANDARD CURRICULUM",
     text: "Validated by industry experts and meticulously structured. One of the best world wide curriculum with focus to ensure excellence.",
   },
   {
-    image: "/crestad3.png",
+    image: "/crestad/crestad3.png",
     title: "MULTIPLE PROJECTS",
     text: "Get hands-on experience with multiple projects to enhance your skills. Believe by seeing your own work.",
   },
   {
-    image: "/crestad4.png",
+    image: "/crestad/crestad4.png",
     title: "INDUSTRY READINESS",
     text: "Resume preparation, career counselling, skill enhancement workshops, mock interviews, soft skills training, Industry networking.",
   },
   {
-    image: "/crestad5.png",
+    image: "/crestad/crestad5.png",
     title: "PLACEMENT ASSISTANCE",
     text: "Actively assist students in securing suitable employment opportunities by connecting with potential employers.",
   },
   {
-    image: "/crestad6.png",
+    image: "/crestad/crestad6.png",
     title: "IAO CERTIFICATION ACCREDITATION",
     text: "Get international accredited certification with online links.",
   },
@@ -132,7 +132,7 @@ export default function CrestWay() {
 
           </div>
 
-          <button className="mt-12 rounded-full bg-[#1A71E9] px-7 py-2 text-[20px] text-white transition hover:bg-[#ffc20e] hover:text-[#1A71E9] hover:border hover:border-[#1A71E9]
+          <button className="w-[180px] md:w-[220px] h-[48px] md:h-[53px] text-lg md:text-xl lg:text-[24px] leading-tight tracking-[0] mt-12 md:mt-16 px-[6px] py-[12px] bg-[#1A71E9] text-white rounded-3xl hover:bg-transparent hover:border hover:border-[#1A71E9] hover:text-[#1A71E9]
          >">
             Our Approach
           </button>

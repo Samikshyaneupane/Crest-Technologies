@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import Link from "next/link";
 import Image from "next/image";
 import {
   ChevronDown,
@@ -58,7 +59,7 @@ export default function FAQs() {
       <section className="bg-[#f5f6f7] px-3 py-5">
         <div className="mx-auto grid max-w-[1200px] gap-6 lg:grid-cols-2">
 
-          {/* ================= LEFT FAQ CARD ================= */}
+          {/*  LEFT FAQ CARD  */}
 
           <div className="rounded-md bg-[#99CDFF] px-5 py-5 shadow-md">
             <h2 className="mb-5 text-4xl font-bold text-[#172033]">
@@ -143,9 +144,14 @@ export default function FAQs() {
                 curriculum.
               </p>
 
-              <button className="mt-6 w-fit rounded-full border border-transparent bg-[#FF5757] px-4 py-1.5 text-[19px] text-white transition hover:border-blue-500 hover:bg-transparent hover:text-blue-500">
-                Connect with us
-              </button>
+             
+              <Link
+  href="/corporate"
+  prefetch={false}
+  className="mt-6 w-fit rounded-full border border-transparent bg-[#FF5757] px-4 py-1.5 text-[19px] text-white transition hover:border-blue-500 hover:bg-transparent hover:text-blue-500"
+>
+  Connect with us
+</Link>
             </div>
           </div>
         </div>
@@ -284,14 +290,14 @@ export default function FAQs() {
               {/* TITLE */}
 
               <h2 className="pr-20 text-3xl font-bold text-[#292929]">
-                Ready
+                Ready to Get Started
               </h2>
 
               <p className="mt-2 text-[14px] text-[#475569]">
-                Your .
+                Your E-mail address will not be published.
               </p>
 
-              {/* ================= FORM ================= */}
+              {/*  FORM  */}
 
               <form
                 className="mt-5 space-y-3"
