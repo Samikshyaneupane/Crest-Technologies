@@ -71,9 +71,9 @@ export default function CourseFAQ() {
                     <button
                       type="button"
                       onClick={() => toggleFAQ(index)}
-                      className="flex w-full items-center justify-between gap-6 py-6 text-left"
+                      className="flex w-full items-center justify-between gap-6 py-6 text-left border-b border-[#cce7ff] last:border-0 pb-4"
                     >
-                      <span className="pr-4 text-[18px] font-medium leading-[1.4] text-black md:text-[20px] lg:text-[21px]">
+                      <span className="w-full font:myraid flex justify-between items-center text-left text-md md:text-xl text-black font-medium focus:outline-none">
                         {faq.question}
                       </span>
 

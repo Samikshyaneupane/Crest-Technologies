@@ -8,7 +8,7 @@ export default function CorporateHero() {
 
   return (
     <>
-      {/* ================= CORPORATE HERO ================= */}
+      {/*  CORPORATE HERO  */}
       <section className="w-full bg-white">
         <div className="mx-auto flex min-h-[540px] max-w-[1500px] items-center px-4 py-3 lg:px-8">
           {/* LEFT SIDE */}
@@ -30,7 +30,7 @@ export default function CorporateHero() {
             <button
               type="button"
               onClick={() => setShowConsultation(true)}
-              className="mt-8 rounded-full border border-transparent bg-[#FFCC00] px-7 py-2.5 text-[18px] font-medium text-[#00135C] transition-all hover:border-blue-500 hover:bg-transparent hover:text-blue-500"
+              className="z-0 group relative inline-flex items-center justify-center box-border appearance-none select-none whitespace-nowrap font-normal subpixel-antialiased overflow-hidden tap-highlight-transparent data-[pressed=true]:scale-[0.97] outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 min-w-20 h-10 text-small gap-2 [&>svg]:max-w-[theme(spacing.8)] transition-transform-colors-opacity motion-reduce:transition-none data-[hover=true]:opacity-hover bg-[#FFCC00] rounded-3xl px-6 py-6 hover:bg-transparent hover:border hover:border-blue-500 text-[#00135C] hover:text-blue-500 font-normal text-lg md:text-xl lg:text-2xl"
             >
               Request a Consultation
             </button>
@@ -40,7 +40,7 @@ export default function CorporateHero() {
           <div className="-mr-8 flex w-[52%] items-center justify-start">
             <div className="relative h-[600px] w-[600px] leading-[100%]">
               <Image
-                src="/corporateHero.png"
+                src="/corporate/corporateHero.png"
                 alt="Corporate Training"
                 fill
                 loading="lazy"
@@ -53,7 +53,7 @@ export default function CorporateHero() {
         </div>
       </section>
 
-      {/* ================= CONSULTATION POPUP ================= */}
+      {/*CONSULTATION POPUP  */}
       {showConsultation && (
         <div
           className="fixed inset-0 z-[9999] flex items-center justify-center bg-black/50 px-4 py-4"

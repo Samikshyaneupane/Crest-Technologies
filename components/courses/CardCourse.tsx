@@ -60,7 +60,7 @@ export default function CourseCard({
                   alt=""
                   fill
                   className="object-contain"
-                  sizes="23px"
+                  sizes="25px"
                 />
               </div>
 
@@ -70,7 +70,7 @@ export default function CourseCard({
             </div>
 
             {/* VIEW DETAILS */}
-            <span className="font-myriad text-[19px] font-semibold text-[#1677FF] transition-colors hover:text-[#005fd4] hover:underline">
+            <span className="text-[#1A71E9] hover:underline ml-auto text-lg md:text-xl">
               View Details
             </span>
           </div>

@@ -18,8 +18,11 @@ const navLinks = [
 
 export default function Header() {
   const pathname = usePathname();
+
+  const [mobileOpen, setMobileOpen] = useState(false);
   const [showRegistration, setShowRegistration] = useState(false);
 
+  // Lock page scroll when registration popup is open
   useEffect(() => {
     document.body.style.overflow = showRegistration ? "hidden" : "";
 
@@ -28,6 +31,7 @@ export default function Header() {
     };
   }, [showRegistration]);
 
+  // Close registration popup with Escape
   useEffect(() => {
     const handleEscape = (e: KeyboardEvent) => {
       if (e.key === "Escape") {
@@ -42,88 +46,185 @@ export default function Header() {
     };
   }, []);
 
+  // Close mobile menu when page changes
+  useEffect(() => {
+    setMobileOpen(false);
+  }, [pathname]);
+
   const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
   };
 
   return (
     <>
-      {/* HEADER */}
-      <header className="sticky left-0 top-0 z-50 w-full bg-white shadow-md font-myriad ">
-        <div className="flex items-center leading-tight select-none transition-opacity duration-300 ease-out opacity-100">
+      {/*  HEADER  */}
+      <header className="sticky top-0 z-50 w-full bg-white shadow-md font-myriad">
 
-          {/* LOGO */}
+        {/* HEADER ROW */}
+        {/* <div className="flex h-[85px] w-full translate-y-[1px] items-center px-6"> */}
+          <div className="flex h-[85px] max-w-9xl translate-y-[1px] items-center pl-[20px] pr-6 flex items-center justify-between">
+
+          {/*  LOGO  */}
           <Link
             href="/"
             prefetch={false}
-            className="flex shrink-0 items-center"
+            className="flex items-center leading-tight select-none transition-opacity duration-300 ease-out opacity-100"
           >
             <Image
               src="/logo.png"
-              alt="CREST Technologies"
-              width={150}
-              height={72}
+              alt="CREST Technologies Logo"
+              width={120}
+              height={48}
               priority
-              className="mx-[20px] my-[5px] h-[77px] w-[105px] object-contain"
+             
             />
           </Link>
 
-          {/* NAVIGATION */}
-      
-<nav className="ml-[130px] hidden items-center gap-[28px] lg:flex">
-  {navLinks.map((link) => {
-    const active = pathname === link.href;
+          {/*  DESKTOP NAV */}
+          <nav className="font-myriad font-normal ml-[105px] mt-[12px] hidden shrink-0 items-center gap-[18px] lg:flex">
+            {navLinks.map((link) => {
+              const active = pathname === link.href;
 
-    return (
-      <Link
-        key={link.href}
-        href={link.href}
-        prefetch={false}
-        className={`
-          whitespace-nowrap
-          text-[20px]
-          font-normal
-          leading-[100%]
-          tracking-normal
-          transition-colors
-          duration-200
-          ${
-            active
-              ? "text-[#00135C]"
-              : "text-[#464646] hover:text-[#00135C]"
-          }
-        `}
-      >
-        {link.label}
-      </Link>
-    );
-  })}
-</nav>
+              return (
+                <Link
+                  key={link.href}
+                  href={link.href}
+                  prefetch={false}
+                  className={`
+                    font-myraid
+                    whitespace-nowrap
+                    text-[21px]
+                    font-normal
+                    leading-[24px]
+                    tracking-normal
+                    transition-colors
+                    duration-200
+                    mb:[10px]
+                    ${
+                      active
+                        ? "font-medium text-[#00135C]"
+                        : "text-[#464646] hover:text-blue-600"
+                    }
+                  `}
+                >
+                  {link.label}
+                </Link>
+              );
+            })}
+          </nav>
 
-          {/* REGISTRATION BUTTON */}
-          <button
+          {/* Push registration button to right */}
+          <div className="flex-1" />
+
+          {/* DESKTOP REGISTRATION */}
+<button
   type="button"
   onClick={() => setShowRegistration(true)}
-  className="
-    absolute right-6 top-1/2 -translate-y-1/2
-    hidden lg:inline-block
-    bg-[#FFCC00]
-    px-4 py-3
-    text-[20px] font-normal
-    leading-[100%]
-    text-[#292929]
-    rounded-md
-    hover:bg-[#F2A900]
-    transition-colors duration-200
-    whitespace-nowrap
-  "
+  className="hidden lg:inline-block w-[250px] font:normal font-myraid px-7 py-[14px] bg-[#FFCC00] translate-x-[5px] hover:bg-[#ECA900] text-[22px] text-[#292929] font-normal rounded-md transition-colors duration-200 leading-[100%] tracking-normal text-center opacity-100"
 >
   Registration Form
 </button>
+
+          {/* MOBILE MENU BUTTON  */}
+          <button
+            type="button"
+            aria-label="Toggle navigation"
+            aria-expanded={mobileOpen}
+            onClick={() => setMobileOpen((prev) => !prev)}
+            className="ml-auto flex items-center justify-center lg:hidden"
+          >
+            {mobileOpen ? (
+              /* X ICON */
+              <svg
+                className="h-8 w-8 text-[#1E2157]"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
+                  d="M6 18L18 6M6 6l12 12"
+                />
+              </svg>
+            ) : (
+              /* HAMBURGER ICON */
+              <svg
+                className="h-8 w-8 text-[#1E2157]"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
+                  d="M4 6h16M4 12h16M4 18h16"
+                />
+              </svg>
+            )}
+          </button>
         </div>
+
+        {/*  MOBILE DROPDOWN  */}
+        {mobileOpen && (
+          <div className="w-full border-t border-gray-100 bg-white lg:hidden">
+            <nav className="flex flex-col px-6 py-4">
+              {navLinks.map((link) => {
+                const active = pathname === link.href;
+
+                return (
+                  <Link
+                    key={link.href}
+                    href={link.href}
+                    prefetch={false}
+                    onClick={() => setMobileOpen(false)}
+                    className={`
+                      py-3
+                      text-[20px]
+                      font-normal
+                      ${
+                        active
+                          ? "font-medium text-[#00135C]"
+                          : "text-[#464646]"
+                      }
+                    `}
+                  >
+                    {link.label}
+                  </Link>
+                );
+              })}
+
+              {/* MOBILE REGISTRATION BUTTON */}
+              <button
+                type="button"
+                onClick={() => {
+                  setMobileOpen(false);
+                  setShowRegistration(true);
+                }}
+                className="
+                  mt-4
+                  w-fit
+                  rounded-md
+                  bg-[#FFCC00]
+                  px-8
+                  py-3
+                  text-[20px]
+                  font-normal
+                  leading-[20px]
+                  text-[#292929]
+                  shadow-[0_2px_8px_rgba(0,0,0,0.08)]
+                "
+              >
+                Registration Form
+              </button>
+            </nav>
+          </div>
+        )}
       </header>
 
-      {/* REGISTRATION POPUP */}
+      {/*REGISTRATION POPUP */}
       {showRegistration && (
         <div
           className="
@@ -144,6 +245,7 @@ export default function Header() {
             }
           }}
         >
+          {/* POPUP CONTAINER */}
           <div
             className="
               w-full
@@ -156,7 +258,7 @@ export default function Header() {
               shadow-2xl
             "
           >
-            {/* MODAL HEADER */}
+            {/* POPUP HEADER */}
             <div className="flex items-start justify-between">
               <h2 className="text-[34px] font-bold leading-none text-[#00135C]">
                 Registration Form
@@ -179,7 +281,7 @@ export default function Header() {
               </button>
             </div>
 
-            {/* FORM */}
+            {/*  FORM  */}
             <form onSubmit={handleSubmit} className="mt-[18px]">
 
               {/* FULL NAME */}
@@ -204,7 +306,7 @@ export default function Header() {
                 "
               />
 
-              {/* PHONE */}
+              {/* PHONE NUMBER */}
               <input
                 type="tel"
                 name="phone"
@@ -250,7 +352,17 @@ export default function Header() {
                   "
                 />
 
-                <span className="pointer-events-none absolute right-[16px] top-1/2 -translate-y-1/2 text-[16px] text-[#98A2B3]">
+                <span
+                  className="
+                    pointer-events-none
+                    absolute
+                    right-[16px]
+                    top-1/2
+                    -translate-y-1/2
+                    text-[16px]
+                    text-[#98A2B3]
+                  "
+                >
                   (Optional)
                 </span>
               </div>
@@ -325,7 +437,16 @@ export default function Header() {
                   "
                 />
 
-                <span className="pointer-events-none absolute right-[16px] top-[15px] text-[16px] text-[#98A2B3]">
+                <span
+                  className="
+                    pointer-events-none
+                    absolute
+                    right-[16px]
+                    top-[15px]
+                    text-[16px]
+                    text-[#98A2B3]
+                  "
+                >
                   (Optional)
                 </span>
               </div>
@@ -351,7 +472,6 @@ export default function Header() {
               >
                 Submit
               </button>
-
             </form>
           </div>
         </div>

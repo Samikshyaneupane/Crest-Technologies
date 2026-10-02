@@ -7,8 +7,8 @@ type Props = {
 
 export default function UpcomingBatch({ course }: Props) {
   return (
-    <section className="relative w-full bg-white pb-10">
-      <div className="mx-auto max-w-[1400px] px-6">
+    <section className="relative w-full bg-white pb-0">
+      <div className="mx-auto max-w-[1200px] px-6">
 
         {/* CARD */}
         <div
@@ -17,7 +17,7 @@ export default function UpcomingBatch({ course }: Props) {
             z-30
             mx-auto
             max-w-[1150px]
-            -translate-y-[100px]
+            -translate-y-[95px]
             border
             border-[#333]
             bg-white

@@ -4,9 +4,9 @@ import { useEffect, useState } from "react";
 import Image from "next/image";
 
 const slides = [
-  { image: "/image1.jpg" },
-  { image: "/image2.jpg" },
-  { image: "/image3.jpg" },
+  { image: "/home/herocara/image1.webp" },
+  { image: "/home/herocara/image2.webp" },
+  { image: "/home/herocara/image3.webp" },
 ];
 
 const heroTexts = [
@@ -76,35 +76,13 @@ export default function Hero() {
       {/* HERO SECTION */}
       <section className="w-full bg-white">
         <div
-          className="
-            mx-auto
-            grid
-            min-h-[520px]
-            max-w-[1750px]
-            grid-cols-1
-            items-center
-            gap-12
-            px-6
-            py-8
-            md:grid-cols-2
-            lg:px-6
-            lg:py-10
+          className=" mx-auto grid min-h-[520px] max-w-[1750px] grid-cols-1 items-center gap-12 px-6 py-8 md:grid-cols-2 lg:px-6 lg:py-10
           "
         >
           {/* LEFT CONTENT */}
           <div className="max-w-[680px]">
             <h1
-              className="
-                mb-4
-                max-w-[582px]
-                text-3xl
-                font-bold
-                leading-tight
-                tracking-[0]
-                text-[#292929]
-                md:text-4xl
-                md:leading-[44px]
-                lg:text-5xl
+              className=" mb-4 max-w-[582px] text-3xl font-bold leading-tight tracking-[0] text-[#292929] md:text-4xl md:leading-[44px] lg:text-5xl
               "
             >
               {heroTexts[textIndex].title}
@@ -112,14 +90,7 @@ export default function Hero() {
 
             <p
               className="
-                mt-5
-                max-w-[620px]
-                text-[17px]
-                leading-[1.45]
-                text-[#333333]
-                transition-all
-                duration-500
-                md:text-[19px]
+                mt-5 max-w-[620px] text-[17px] leading-[1.45] text-[#333333] transition-all duration-500  md:text-[19px]
               "
             >
               {heroTexts[textIndex].description}
@@ -158,8 +129,8 @@ export default function Hero() {
           </div>
 
           {/* IMAGE CAROUSEL */}
-          <div className="relative  bg-[#D9D9D9]  w-full md:max-w-[585px]">
-            <div className="relative aspect-[4/3] rounded-lg overflow-hidden  shadow-xl">
+          <div className="relative ml-auto bg-[#D9D9D9]  w-full md:max-w-[585px]">
+            <div className="relative aspect-[4/3] rounded-[20px] overflow-hidden  shadow-xl md:ml-auto">
               <Image
                 key={active.image}
                 src={active.image}

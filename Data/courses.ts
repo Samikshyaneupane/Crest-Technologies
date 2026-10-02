@@ -113,7 +113,7 @@ export const courseData: Record<string, CourseData> = {
       description: "Join us at our training center | Old Baneshwor",
     },
 
-    certificateImage: "/courses/certificates/qa-certificate.png",
+    certificateImage: "/Courses/certificates/qa-certificate.png",
   },
 
   
@@ -324,7 +324,7 @@ export const courseData: Record<string, CourseData> = {
     },
 
     certificateImage:
-      "/Courses/certificates/cybersecurity-certificate.png",
+      "/Courses/certificates/qa-certificate.png",
   },
 
   
@@ -338,7 +338,7 @@ export const courseData: Record<string, CourseData> = {
     shortDescription:
       "Learn data science, artificial intelligence, and machine learning through practical projects using Python and modern data technologies.",
 
-    heroImage: "/courses/coursedetail.png",
+    heroImage: "/Courses/coursedetail.png",
     learners: "1100+",
     rating: "4.5",
 
@@ -395,7 +395,7 @@ export const courseData: Record<string, CourseData> = {
     },
 
     certificateImage:
-      "/Courses/certificates/data-science-certificate.png",
+      "/Courses/certificates/qa-certificate.png",
   },
 
   // FLUTTER DEVELOPMENT
@@ -408,7 +408,7 @@ export const courseData: Record<string, CourseData> = {
     shortDescription:
       "Learn to build beautiful, high-performance cross-platform mobile applications for Android and iOS using Flutter and Dart.",
 
-    heroImage: "/courses/coursedetaail.png",
+    heroImage: "/Courses/coursedetaail.png",
     learners: "850+",
     rating: "4.5",
 
@@ -464,7 +464,7 @@ export const courseData: Record<string, CourseData> = {
       description: "Join us at our training center | Old Baneshwor",
     },
 
-    certificateImage: "/Courses/certificates/flutter-certificate.png",
+    certificateImage: "/Courses/certificates/qa-certificate.png",
   },
 
 
@@ -478,7 +478,7 @@ export const courseData: Record<string, CourseData> = {
     shortDescription:
       "Learn to design intuitive digital products through user research, wireframing, prototyping, visual design, and user-centered design principles.",
 
-    heroImage: "/courses/coursedetail.png",
+    heroImage: "/Courses/coursedetail.png",
     learners: "950+",
     rating: "4.5",
 
@@ -534,7 +534,7 @@ export const courseData: Record<string, CourseData> = {
       description: "Join us at our training center | Old Baneshwor",
     },
 
-    certificateImage: "/Courses/certificates/uiux-certificate.png",
+    certificateImage: "/Courses/certificates/qa-certificate.png",
   },
 
   // FULL STACK DEVELOPMENT (MERN)
@@ -547,7 +547,7 @@ export const courseData: Record<string, CourseData> = {
     shortDescription:
       "Master full-stack web development using MongoDB, Express.js, ReactJS, and Node.js and build complete production-ready web applications.",
 
-    heroImage: "/courses/mern.png",
+    heroImage: "/Courses/mern.png",
     learners: "1200+",
     rating: "4.5",
 
@@ -603,7 +603,7 @@ export const courseData: Record<string, CourseData> = {
       description: "Join us at our training center | Old Baneshwor",
     },
 
-    certificateImage: "/Courses/certificates/mern-certificate.png",
+    certificateImage: "/Courses/certificates/qa-certificate.png",
   },
 
 
@@ -617,7 +617,7 @@ export const courseData: Record<string, CourseData> = {
     shortDescription:
       "Learn server-side development, databases, REST APIs, authentication, and backend architecture to build secure and scalable applications.",
 
-    heroImage: "/courses/backend.png",
+    heroImage: "/Courses/backend.png",
     learners: "900+",
     rating: "4.5",
 
@@ -673,6 +673,6 @@ export const courseData: Record<string, CourseData> = {
       description: "Join us at our training center | Old Baneshwor",
     },
 
-    certificateImage: "/Courses/certificates/backend-certificate.png",
+    certificateImage: "/Courses/certificates/qa-certificate.png",
   },
 };

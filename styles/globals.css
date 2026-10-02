@@ -3,6 +3,7 @@
 
 @custom-variant dark (&:is(.dark *));
 
+/* Myriad Pro Regular */
 @font-face {
   font-family: "Myriad Pro";
   src: url("/fonts/MyriadPro/MyriadPro-Regular.woff") format("woff");
@@ -11,11 +12,49 @@
   font-display: swap;
 }
 
+/* Myriad Pro Bold */
+@font-face {
+  font-family: "Myriad Pro";
+  src: url("/fonts/MyriadPro/MyriadPro-Bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
 @theme {
-  --font-sans: "Inter", "Poppins", sans-serif;
-  --font-mono: "monospace", monospace;
+  --font-sans: "Myriad Pro", Arial, sans-serif;
+  --font-mono: monospace;
 }
 
 .font-myriad {
-  font-family: "Myriad Pro", sans-serif;
+  font-family: "Myriad Pro", Arial, sans-serif;
+}
+
+body {
+  font-family: "Myriad Pro", Arial, sans-serif;
+}
+
+/* Scrollbar */
+html {
+  scrollbar-color: #6b6b6b #202020;
+  scrollbar-width: auto;
+}
+
+/* Chrome, Edge, Safari */
+::-webkit-scrollbar {
+  width: 16px;
+}
+
+::-webkit-scrollbar-track {
+  background: #202020;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #6b6b6b;
+  border-radius: 10px;
+  border: 3px solid #202020;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #858585;
 }
