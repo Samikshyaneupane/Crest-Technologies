@@ -4,6 +4,7 @@ import { FormEvent, useEffect, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import ScrollReveal from "@/components/ScrollReveal";
 
 const navLinks = [
   { label: "Courses", href: "/courses" },
@@ -57,75 +58,99 @@ export default function Header() {
 
   return (
     <>
-      {/*  HEADER  */}
+      {/* HEADER */}
       <header className="sticky top-0 z-50 w-full bg-white shadow-md font-myriad">
-
         {/* HEADER ROW */}
-        {/* <div className="flex h-[85px] w-full translate-y-[1px] items-center px-6"> */}
-          <div className="flex h-[85px] max-w-9xl translate-y-[1px] items-center pl-[20px] pr-6 flex items-center justify-between">
+        <div className="flex h-[79px] max-w-9xl items-center justify-between pl-[20px] pr-6">
 
-          {/*  LOGO  */}
-          <Link
-            href="/"
-            prefetch={false}
-            className="flex items-center leading-tight select-none transition-opacity duration-300 ease-out opacity-100"
-          >
-            <Image
-              src="/logo.png"
-              alt="CREST Technologies Logo"
-              width={120}
-              height={48}
-              priority
-             
-            />
-          </Link>
+         {/* LOGO */}
+<ScrollReveal direction="left" delay={0}>
+  <Link
+    href="/"
+    prefetch={false}
+    className="mr-[8px] mb-[10px] mt-[10px] flex translate-x-[-5px] items-center leading-tight select-none"
+  >
+    <Image
+      src="/logo.png"
+      alt="CREST Technologies Logo"
+      width={110}
+      height={48}
+      priority
+    />
+  </Link>
+</ScrollReveal>
 
-          {/*  DESKTOP NAV */}
-          <nav className="font-myriad font-normal ml-[105px] mt-[12px] hidden shrink-0 items-center gap-[18px] lg:flex">
-            {navLinks.map((link) => {
-              const active = pathname === link.href;
+          {/* DESKTOP NAV */}
+          <ScrollReveal direction="left" delay={100}>
+            <nav className="ml-[100px] mt-[5px] hidden shrink-0 items-center gap-[16px] font-myriad font-normal lg:flex">
+              {navLinks.map((link) => {
+                const active = pathname === link.href;
 
-              return (
-                <Link
-                  key={link.href}
-                  href={link.href}
-                  prefetch={false}
-                  className={`
-                    font-myraid
-                    whitespace-nowrap
-                    text-[21px]
-                    font-normal
-                    leading-[24px]
-                    tracking-normal
-                    transition-colors
-                    duration-200
-                    mb:[10px]
-                    ${
-                      active
-                        ? "font-medium text-[#00135C]"
-                        : "text-[#464646] hover:text-blue-600"
-                    }
-                  `}
-                >
-                  {link.label}
-                </Link>
-              );
-            })}
-          </nav>
+                return (
+                  <Link
+                    key={link.href}
+                    href={link.href}
+                    prefetch={false}
+                    className={`
+                      whitespace-nowrap
+                      text-[20px]
+                      font-normal
+                      leading-[20px]
+                      tracking-normal
+                      transition-colors
+                      duration-200
+                      translate-x-[-18px]
+                      ${
+                        active
+                          ? "font-medium text-[#00135C]"
+                          : "text-[#464646] hover:text-blue-600"
+                      }
+                    `}
+                  >
+                    {link.label}
+                  </Link>
+                );
+              })}
+            </nav>
+          </ScrollReveal>
 
-          {/* Push registration button to right */}
+          {/* PUSH REGISTRATION BUTTON RIGHT */}
           <div className="flex-1" />
 
           {/* DESKTOP REGISTRATION */}
-<button
-  type="button"
-  onClick={() => setShowRegistration(true)}
-  className="hidden lg:inline-block w-[250px] font:normal font-myraid px-7 py-[14px] bg-[#FFCC00] translate-x-[5px] hover:bg-[#ECA900] text-[22px] text-[#292929] font-normal rounded-md transition-colors duration-200 leading-[100%] tracking-normal text-center opacity-100"
->
-  Registration Form
-</button>
+          <ScrollReveal direction="left" delay={200}>
+            <button
+              type="button"
+              onClick={() => setShowRegistration(true)}
+              className="
+                hidden
+                max-w-[400px]
+                translate-x-[8px]
+                rounded-md
+                bg-[#FFCC00]
+                pl-[36px]
+                pr-[21px]
+                py-[12px]
+                text-center
+                font-myriad
+                text-[21px]
+                font-normal
+                leading-[100%]
+                tracking-normal
+                text-[#292929]
+                transition-colors
+                duration-200
+                hover:bg-[#ECA900]
+                lg:inline-block
+              "
+            >
+             <span className="inline-block translate-x-[-7px] scale-[0.96]">
+                Registration Form
+              </span>
+            </button>
+          </ScrollReveal>
 
-          {/* MOBILE MENU BUTTON  */}
+          {/* MOBILE MENU BUTTON */}
           <button
             type="button"
             aria-label="Toggle navigation"
@@ -167,7 +192,7 @@ export default function Header() {
           </button>
         </div>
 
-        {/*  MOBILE DROPDOWN  */}
+        {/* MOBILE DROPDOWN */}
         {mobileOpen && (
           <div className="w-full border-t border-gray-100 bg-white lg:hidden">
             <nav className="flex flex-col px-6 py-4">
@@ -224,7 +249,7 @@ export default function Header() {
         )}
       </header>
 
-      {/*REGISTRATION POPUP */}
+      {/* REGISTRATION POPUP */}
       {showRegistration && (
         <div
           className="
@@ -281,7 +306,7 @@ export default function Header() {
               </button>
             </div>
 
-            {/*  FORM  */}
+            {/* FORM */}
             <form onSubmit={handleSubmit} className="mt-[18px]">
 
               {/* FULL NAME */}

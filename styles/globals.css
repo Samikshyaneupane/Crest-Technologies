@@ -3,24 +3,21 @@
 
 @custom-variant dark (&:is(.dark *));
 
-/* Myriad Pro Regular */
 @font-face {
   font-family: "Myriad Pro";
-  src: url("/fonts/MyriadPro/MyriadPro-Regular.woff") format("woff");
+  src: url("/fonts/MyraidPro/MyriadPro-Regular.woff") format("woff");
   font-weight: 400;
   font-style: normal;
   font-display: swap;
 }
 
-/* Myriad Pro Bold */
 @font-face {
   font-family: "Myriad Pro";
-  src: url("/fonts/MyriadPro/MyriadPro-Bold.woff") format("woff");
+  src: url("/fonts/MyraidPro/MyriadPro-Bold.woff") format("woff");
   font-weight: 700;
   font-style: normal;
   font-display: swap;
 }
-
 @theme {
   --font-sans: "Myriad Pro", Arial, sans-serif;
   --font-mono: monospace;

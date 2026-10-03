@@ -35,7 +35,7 @@ export default function Hero() {
   useEffect(() => {
     const timer = setInterval(() => {
       setIndex((i) => (i + 1) % slides.length);
-    }, 1500);
+    }, 1000);
 
     return () => clearInterval(timer);
   }, []);
@@ -44,7 +44,7 @@ export default function Hero() {
   useEffect(() => {
     const timer = setInterval(() => {
       setTextIndex((i) => (i + 1) % heroTexts.length);
-    }, 1500);
+    }, 1000);
 
     return () => clearInterval(timer);
   }, []);
