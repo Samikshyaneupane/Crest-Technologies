@@ -54,56 +54,109 @@ export default function CourseCards() {
     <>
       {/* COURSES SECTION */}
       <section id="courses" className="scroll-mt-20 bg-white py-16">
-        <div className="mx-auto grid max-w-7xl grid-cols-1 gap-3.5 px-6 sm:grid-cols-3 ">
+        <div className="mx-5 grid grid-cols-1 gap-[14px] md:grid-cols-2 lg:grid-cols-3">
           {courses.map((course) => (
             <div
               key={course.title}
-              className="flex min-h-[220px] flex-col justify-between bg-[#DAEBFF] p-6"
+              className="flex h-[213px] flex-col gap-[30px] bg-[#DAEBFF] p-[24px] font-myriad"
             >
-              {/* Course Info */}
+              {/* COURSE INFO */}
               <div>
-                <h2 className="text-2xl font-bold text-[#0B1F5C]">
+                <h3 className="text-[28px] font-bold leading-[100%] tracking-[0] text-[#00135C]">
                   {course.title}
-                </h2>
+                </h3>
 
-                <div className="mt-4 space-y-5 text-md text-[#0B1F5C]">
-                  {/* Duration */}
-                  <div className="flex items-center gap-3">
+                <div className="mt-[20px] flex flex-col gap-[12px]">
+                  {/* DURATION */}
+                  <div className="flex items-center text-sm text-[#002D62]">
                     <Calendar
-                      className="h-7 w-7 text-[#0B1F5C] "
+                      className="mr-2 h-[24px] w-[24px]"
                       strokeWidth={2}
                     />
 
-                    <span>{course.duration}</span>
+                    <span className="text-[16px] font-normal leading-[100%] tracking-[0] text-[#292929]">
+                      {course.duration}
+                    </span>
                   </div>
 
-                  {/* Mode */}
-                  <div className="flex items-center gap-3">
+                  {/* MODE */}
+                  <div className="flex items-center text-sm text-[#002D62]">
                     <PlayCircle
-                      className="h-7 w-7 text-[#0B1F5C]"
+                      className="mr-2 h-[24px] w-[24px]"
                       strokeWidth={2}
                     />
 
-                    <span>{course.mode}</span>
+                    <span className="text-[16px] font-normal leading-[100%] tracking-[0] text-[#292929]">
+                      {course.mode}
+                    </span>
                   </div>
                 </div>
               </div>
 
-              {/* Buttons */}
-              <div className="mt-4 flex gap-3">
-                {/* View */}
+              {/* BUTTONS */}
+              <div className="flex space-x-[12px] px-[6px] py-[8px]">
+                {/* VIEW */}
                 <Link
                   href="#"
-                  className="z-0 group relative inline-flex items-center justify-center box-border appearance-none select-none whitespace-nowrap subpixel-antialiased overflow-hidden tap-highlight-transparent data-[pressed=true]:scale-[0.97] outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 px-4 min-w-20 gap-2 [&>svg]:max-w-[theme(spacing.8)] transition-transform-colors-opacity motion-reduce:transition-none b bg-default data-[hover=true]:opacity-hover w-[86px] h-[29px] rounded-2xl border border-[#1A71E9] font-normal text-[16px] bg-transparent leading-[100%] tracking-[0] text-[#1A71E9] hover:bg-transparent"
+                  className="
+                    z-0
+                    group
+                    relative
+                    inline-flex
+                    h-[29px]
+                    w-[86px]
+                    min-w-20
+                    items-center
+                    justify-center
+                    gap-2
+                    whitespace-nowrap
+                    rounded-2xl
+                    border
+                    border-[#1A71E9]
+                    bg-transparent
+                    px-4
+                    text-[16px]
+                    font-normal
+                    leading-[100%]
+                    tracking-[0]
+                    text-[#1A71E9]
+                    transition-colors
+                    hover:bg-transparent
+                  "
                 >
                   View
                 </Link>
 
-                {/* Apply */}
+                {/* APPLY */}
                 <button
                   type="button"
                   onClick={() => openForm(course.title)}
-                  className="z-0 group relative inline-flex items-center justify-center box-border appearance-none select-none whitespace-nowrap subpixel-antialiased overflow-hidden tap-highlight-transparent data-[pressed=true]:scale-[0.97] outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 px-4 min-w-20 gap-2 [&>svg]:max-w-[theme(spacing.8)] transition-transform-colors-opacity motion-reduce:transition-none data-[hover=true]:opacity-hover w-[86px] h-[29px] rounded-2xl font-normal text-[16px] leading-[100%] tracking-[0] text-[#FFFFFF] bg-[#1A71E9] border border-[#1A71E9] hover:bg-[#DAEBFF] hover:text-[#1A71E9] hover:border-[#1A71E9] transition-colors"
+                  className="
+                    z-0
+                    group
+                    relative
+                    inline-flex
+                    h-[29px]
+                    w-[86px]
+                    min-w-20
+                    items-center
+                    justify-center
+                    gap-2
+                    whitespace-nowrap
+                    rounded-2xl
+                    border
+                    border-[#1A71E9]
+                    bg-[#1A71E9]
+                    px-4
+                    text-[16px]
+                    font-normal
+                    leading-[100%]
+                    tracking-[0]
+                    text-white
+                    transition-colors
+                    hover:bg-[#DAEBFF]
+                    hover:text-[#1A71E9]
+                  "
                 >
                   Apply
                 </button>
@@ -112,31 +165,50 @@ export default function CourseCards() {
           ))}
         </div>
 
-        {/* Discover More */}
+        {/* DISCOVER MORE */}
         <div className="flex justify-center pt-16">
           <Link
             href="/courses"
-            className="z-0 group relative inline-flex items-center justify-center box-border appearance-none select-none whitespace-nowrap subpixel-antialiased overflow-hidden tap-highlight-transparent data-[pressed=true]:scale-[0.97] outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 min-w-20 [&>svg]:max-w-[theme(spacing.8)] transition-transform-colors-opacity motion-reduce:transition-none data-[hover=true]:opacity-hover w-[218px] h-[53px] rounded-2xl px-[6px] py-[12px] gap-[10px] bg-[#1A71E9] text-white font-normal text-[24px] leading-[100%] tracking-[0] hover:bg-white hover:border hover:border-[#1A71E9] hover:text-[#1A71E9]"
+            className="
+              inline-flex
+              h-[53px]
+              w-[218px]
+              items-center
+              justify-center
+              gap-[10px]
+              rounded-2xl
+              bg-[#1A71E9]
+              px-[6px]
+              py-[12px]
+              text-[24px]
+              font-normal
+              leading-[100%]
+              tracking-[0]
+              text-white
+              transition-colors
+              hover:border
+              hover:border-[#1A71E9]
+              hover:bg-white
+              hover:text-[#1A71E9]
+            "
           >
             Discover More
           </Link>
         </div>
       </section>
 
-      {/*  ENROLLMENT POPUP */}
-     
-
+      {/* ENROLLMENT POPUP */}
       {showForm && (
         <div
           className="fixed inset-0 z-[9999] flex items-center justify-center bg-black/50 px-4 py-3"
           onClick={closeForm}
         >
-          {/* Popup Container */}
+          {/* POPUP CONTAINER */}
           <div
             className="relative w-full max-w-[470px] rounded-xl bg-white px-7 py-5 shadow-2xl"
             onClick={(e) => e.stopPropagation()}
           >
-            {/* Header */}
+            {/* HEADER */}
             <div className="mb-4 flex items-center justify-between">
               <h2 className="text-[27px] font-bold text-[#0B1F5C]">
                 Enroll now
@@ -151,9 +223,8 @@ export default function CourseCards() {
               </button>
             </div>
 
-            {/* Form */}
+            {/* FORM */}
             <form className="space-y-3">
-              {/* Full Name */}
               <input
                 type="text"
                 placeholder="Full Name"
@@ -161,7 +232,6 @@ export default function CourseCards() {
                 className="h-[45px] w-full rounded-lg border border-gray-300 px-4 text-sm outline-none transition focus:border-[#3B7DDE]"
               />
 
-              {/* Phone Number */}
               <input
                 type="tel"
                 placeholder="Phone Number"
@@ -169,7 +239,7 @@ export default function CourseCards() {
                 className="h-[45px] w-full rounded-lg border border-gray-300 px-4 text-sm outline-none transition focus:border-[#3B7DDE]"
               />
 
-              {/* Address */}
+              {/* ADDRESS */}
               <div className="relative">
                 <input
                   type="text"
@@ -182,7 +252,6 @@ export default function CourseCards() {
                 </span>
               </div>
 
-              {/* Email */}
               <input
                 type="email"
                 placeholder="Email"
@@ -190,7 +259,7 @@ export default function CourseCards() {
                 className="h-[45px] w-full rounded-lg border border-gray-300 px-4 text-sm outline-none transition focus:border-[#3B7DDE]"
               />
 
-              {/* Selected Course */}
+              {/* SELECTED COURSE */}
               <input
                 type="text"
                 value={selectedCourse}
@@ -198,7 +267,7 @@ export default function CourseCards() {
                 className="h-[45px] w-full rounded-lg border border-gray-300 bg-white px-4 text-sm text-black outline-none"
               />
 
-              {/* Message */}
+              {/* MESSAGE */}
               <div className="relative">
                 <textarea
                   placeholder="Message"
@@ -210,7 +279,7 @@ export default function CourseCards() {
                 </span>
               </div>
 
-              {/* Submit Button */}
+              {/* SUBMIT */}
               <button
                 type="submit"
                 className="h-[46px] w-full rounded-lg bg-[#FFC400] text-[18px] font-medium text-black transition duration-300 hover:bg-[#eeb700]"

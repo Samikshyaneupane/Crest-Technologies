@@ -59,7 +59,7 @@ export default function Header() {
   return (
     <>
       {/* HEADER */}
-      <header className="sticky top-0 z-50 w-full bg-white shadow-md font-myriad">
+      <header className="sticky top-0 z-50 w-full bg-white shadow-md font-myriad ">
         {/* HEADER ROW */}
         <div className="flex h-[79px] max-w-9xl items-center justify-between pl-[20px] pr-6">
 
@@ -68,51 +68,54 @@ export default function Header() {
   <Link
     href="/"
     prefetch={false}
-    className="mr-[8px] mb-[10px] mt-[10px] flex translate-x-[-5px] items-center leading-tight select-none"
+    className="mr-[8px] mb-[10px] mt-[10px] pb-[1px] flex translate-x-[-5px] items-center leading-tight select-none"
   >
     <Image
       src="/logo.png"
       alt="CREST Technologies Logo"
-      width={110}
-      height={48}
+      width={109}
+      height={46}
       priority
     />
   </Link>
 </ScrollReveal>
+{/* DESKTOP NAV */}
+<ScrollReveal direction="down" delay={100}>
+<nav className="ml-[100px] mt-[5px] hidden shrink-0 items-center gap-[16px] font-myriad font-normal lg:flex">
+  {navLinks.map((link) => {
+    const active = pathname === link.href;
 
-          {/* DESKTOP NAV */}
-          <ScrollReveal direction="left" delay={100}>
-            <nav className="ml-[100px] mt-[5px] hidden shrink-0 items-center gap-[16px] font-myriad font-normal lg:flex">
-              {navLinks.map((link) => {
-                const active = pathname === link.href;
-
-                return (
-                  <Link
-                    key={link.href}
-                    href={link.href}
-                    prefetch={false}
-                    className={`
-                      whitespace-nowrap
-                      text-[20px]
-                      font-normal
-                      leading-[20px]
-                      tracking-normal
-                      transition-colors
-                      duration-200
-                      translate-x-[-18px]
-                      ${
-                        active
-                          ? "font-medium text-[#00135C]"
-                          : "text-[#464646] hover:text-blue-600"
-                      }
-                    `}
-                  >
-                    {link.label}
-                  </Link>
-                );
-              })}
-            </nav>
-          </ScrollReveal>
+    return (
+      
+      
+        <Link
+         key={link.href}
+          href={link.href}
+          prefetch={false}
+          className={`
+            whitespace-nowrap
+            text-[20px]
+            font-normal
+            leading-[20px]
+            tracking-normal
+            transition-colors
+            duration-200
+            translate-x-[-17px]
+            ${
+              active
+                ? "font-medium text-[#00135C]"
+                : "text-[#464646] hover:text-blue-600"
+            }
+          `}
+        >
+          {link.label}
+        </Link>
+      
+    
+    );
+  })}
+</nav>
+</ScrollReveal>
 
           {/* PUSH REGISTRATION BUTTON RIGHT */}
           <div className="flex-1" />
