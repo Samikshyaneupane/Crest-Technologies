@@ -6,6 +6,7 @@ import {
   Users,
 } from "lucide-react";
 
+// Crest Way items
 const crestWay = [
   {
     icon: BookOpen,
@@ -33,6 +34,7 @@ const crestWay = [
   },
 ];
 
+// Crest Advantage items
 const crestAdvantage = [
   {
     image: "/crestad/crestad1.png",
@@ -68,25 +70,28 @@ const crestAdvantage = [
 
 export default function CrestWay() {
   return (
-    <section className="bg-[#f5f6f7] px-4 pt-16 pb-5">
+    // Whole section
+    <section className="bg-[#f5f6f7] px-2 pt-16 pb-5">
 
-      {/* both cards control here */}
-      <div className="mx-auto flex max-w-[1200px] flex-col lg:min-h-[500px] lg:flex-row">
+      {/* Container for both cards */}
+        <div className="mx-auto -translate-x-[20px] flex max-w-[1200px] flex-col lg:min-h-[500px] lg:flex-row">
 
-        {/* LEFT - THE CREST WAY */}
+        {/* Left - The Crest Way */}
         <div className="rounded-md bg-[#ffc20e] px-9 py-10 lg:w-[40%]">
 
-          <h2 className="mb-9 mt-6 text-3xl font-bold text-[#111827] md:text-4xl ">
+          {/* Crest Way heading */}
+          <h2 className="text-[32px] md:text-[40px] lg:text-[48px] font-bold mb-4 leading-tight tracking-[0%] text-[#292929] py-8">
             The Crest Way
           </h2>
 
-          <p className="mb-8 max-w-[330px] pb-7 text-[16px] leading-[1.55] font-semi-bold text-black">
-            Learning methodology that focuses on learner&apos;s  holistic growth
+          {/* Crest Way description */}
+          <p className="text-base md:text-lg lg:text-[20px] font-normal leading-snug tracking-[0] mb-6 text-[#292929]">
+            Learning methodology that focuses on learner&apos;s holistic growth
             and delivers domain-specific information
           </p>
 
+          {/* Crest Way items */}
           <div className="space-y-5">
-
             {crestWay.map((item, index) => {
               const Icon = item.icon;
 
@@ -95,8 +100,7 @@ export default function CrestWay() {
                   key={index}
                   className="flex items-start gap-[10px]"
                 >
-
-                  {/* IMAGE */}
+                  {/* Item icon */}
                   {item.image ? (
                     <Image
                       src={item.image}
@@ -106,16 +110,14 @@ export default function CrestWay() {
                       className="mt-[2px] shrink-0 object-contain"
                     />
                   ) : Icon ? (
-
-                    /* if no image then icons */
                     <Icon
                       size={18}
                       strokeWidth={2}
                       className="mt-[2px] shrink-0 text-black"
                     />
-
                   ) : null}
 
+                  {/* Item text */}
                   <div>
                     <h3 className="text-[18px] font-bold text-black">
                       {item.title}
@@ -125,57 +127,54 @@ export default function CrestWay() {
                       {item.text}
                     </p>
                   </div>
-
                 </div>
               );
             })}
-
           </div>
 
-          <button className="w-[180px] md:w-[220px] h-[48px] md:h-[53px] text-lg md:text-xl lg:text-[24px] leading-tight tracking-[0] mt-12 md:mt-16 px-[6px] py-[12px] bg-[#1A71E9] text-white rounded-3xl hover:bg-transparent hover:border hover:border-[#1A71E9] hover:text-[#1A71E9]
-         >">
+          {/* Our Approach button */}
+          <button className="w-[180px] md:w-[220px] h-[48px] md:h-[53px] text-lg md:text-xl lg:text-[24px] leading-tight tracking-[0] mt-12 md:mt-16 px-[6px] py-[12px] bg-[#1A71E9] text-white rounded-3xl hover:bg-transparent hover:border hover:border-[#1A71E9] hover:text-[#1A71E9]">
             Our Approach
           </button>
 
         </div>
 
-        {/* RIGHT - THE CREST ADVANTAGE */}
+        {/* Right - The Crest Advantage */}
         <div className="bg-white px-6 py-7 lg:w-[60%] lg:px-8">
 
-          <h2 className="mb-9 text-3xl font-bold text-[#111827] md:text-4xl">
+          {/* Crest Advantage heading */}
+          <h2 className="text-[28px] md:text-[40px] lg:text-[48px] font-bold text-[#292929] leading-tight tracking-[0]">
             The Crest Advantage
           </h2>
 
-          <div className="space-y-6">
-
+          {/* Crest Advantage items */}
+          <div className="mt-[30px] space-y-[30px]">
             {crestAdvantage.map((item, index) => (
               <div
                 key={index}
                 className="flex items-start gap-5"
               >
-
-                {/* CREST ADVANTAGE IMAGES */}
+                {/* Advantage image */}
                 <Image
                   src={item.image}
                   alt={item.title || "Crest Advantage"}
-                  width={30}
+                  width={35}
                   height={35}
                   className="mt-1 shrink-0 object-contain"
                 />
 
+                {/* Advantage text */}
                 <div>
                   <h3 className="text-[18px] font-bold text-[#001b67]">
                     {item.title}
                   </h3>
-  
+
                   <p className="mt-2 text-[14px] leading-[1.55] text-black">
                     {item.text}
                   </p>
                 </div>
-
               </div>
             ))}
-
           </div>
 
         </div>

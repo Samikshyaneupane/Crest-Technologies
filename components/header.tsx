@@ -76,6 +76,7 @@ export default function Header() {
       width={109}
       height={46}
       priority
+      
     />
   </Link>
 </ScrollReveal>
@@ -277,7 +278,8 @@ export default function Header() {
           <div
             className="
               w-full
-              max-w-[500px]
+              h-[575px]
+              max-w-[450px]
               rounded-[10px]
               bg-white
               px-[26px]
@@ -288,7 +290,7 @@ export default function Header() {
           >
             {/* POPUP HEADER */}
             <div className="flex items-start justify-between">
-              <h2 className="text-[34px] font-bold leading-none text-[#00135C]">
+              <h2 className="text-2xl lg:text-[28px] font-bold text-[#00135C] ">
                 Registration Form
               </h2>
 
@@ -318,20 +320,7 @@ export default function Header() {
                 name="fullName"
                 placeholder="Full Name"
                 required
-                className="
-                  h-[56px]
-                  w-full
-                  rounded-[8px]
-                  border
-                  border-[#D0D5DD]
-                  px-[16px]
-                  text-[18px]
-                  font-normal
-                  text-[#333]
-                  outline-none
-                  placeholder:text-[#98A2B3]
-                  focus:border-[#2478E8]
-                "
+                className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-blue-500 focus:border-blue-500"
               />
 
               {/* PHONE NUMBER */}
@@ -340,21 +329,8 @@ export default function Header() {
                 name="phone"
                 placeholder="Phone Number"
                 required
-                className="
-                  mt-[10px]
-                  h-[56px]
-                  w-full
-                  rounded-[8px]
-                  border
-                  border-[#D0D5DD]
-                  px-[16px]
-                  text-[18px]
-                  font-normal
-                  text-[#333]
-                  outline-none
-                  placeholder:text-[#98A2B3]
-                  focus:border-[#2478E8]
-                "
+                className="w-full mt-[10px] px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-blue-500 focus:border-blue-500"
+                
               />
 
               {/* ADDRESS */}
@@ -363,20 +339,7 @@ export default function Header() {
                   type="text"
                   name="address"
                   placeholder="Address"
-                  className="
-                    h-[56px]
-                    w-full
-                    rounded-[8px]
-                    border
-                    border-[#D0D5DD]
-                    px-[16px]
-                    pr-[110px]
-                    text-[18px]
-                    font-normal
-                    text-[#333]
-                    outline-none
-                    placeholder:text-[#98A2B3]
-                    focus:border-[#2478E8]
+                  className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-blue-500 focus:border-blue-500
                   "
                 />
 
@@ -403,7 +366,7 @@ export default function Header() {
                 required
                 className="
                   mt-[10px]
-                  h-[56px]
+                  h-[40px]
                   w-full
                   rounded-[8px]
                   border
@@ -426,7 +389,7 @@ export default function Header() {
                 required
                 className="
                   mt-[10px]
-                  h-[56px]
+                  h-[40px]
                   w-full
                   rounded-[8px]
                   border
@@ -447,7 +410,7 @@ export default function Header() {
                   name="message"
                   placeholder="Message"
                   className="
-                    h-[90px]
+                    h-[150px]
                     w-full
                     resize-none
                     rounded-[8px]
@@ -458,6 +421,7 @@ export default function Header() {
                     pr-[110px]
                     text-[18px]
                     font-normal
+                    mb-[15px]
                     text-[#333]
                     outline-none
                     placeholder:text-[#98A2B3]
@@ -482,21 +446,9 @@ export default function Header() {
               {/* SUBMIT */}
               <button
                 type="submit"
-                className="
-                  mt-[12px]
-                  flex
-                  h-[58px]
-                  w-full
-                  items-center
-                  justify-center
-                  rounded-[7px]
-                  bg-[#FFC800]
-                  text-[25px]
-                  font-normal
-                  text-[#111]
-                  transition-colors
-                  hover:bg-[#e5b500]
-                "
+                className="w-full bg-[#FFCC00] text-[#292929] hover:text-blue-500 font-medium py-2 px-4 rounded-md hover:bg-transparent hover:border-2 hover:border-blue-500 relative font-normal text-[18px] md:text-[20px] lg:text-[24px] leading-[100%] tracking-[0]"
+               
+                
               >
                 Submit
               </button>

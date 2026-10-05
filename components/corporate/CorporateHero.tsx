@@ -10,21 +10,21 @@ export default function CorporateHero() {
     <>
       {/*  CORPORATE HERO  */}
       <section className="w-full bg-white">
-        <div className="mx-auto flex min-h-[540px] max-w-[1500px] items-center px-4 py-3 lg:px-4">
+        <div className="mx-auto flex min-h-[540px] max-w-[1500px] items-center px-4 py-2 lg:px-4">
           {/* LEFT SIDE */}
           <div className="w-[60%]">
-         <h1 className="font-myraid font-bold text-[#00135C] text-3xl md:text-4xl lg:text-[53px] mt-10 mb-5">
-  Empower Your
+         <h1 className="font-bold text-[#00135C] text-3xl md:text-4xl lg:text-5xl mt-4 mb-5">
+  Empower Your  Workforce
   <br />
-  Workforce with Cutting-
+  with Cutting-Edge
   <br />
-  Edge Corporate Training
+ Corporate Training
 </h1>
 
             <p className="text-[#6d6d6d] text-lg md:text-xl lg:text-2xl mb-[36px]">
               Comprehensive upskilling and talent solutions for
               <br />
-              organization of all sizes
+              organizations of all sizes
             </p>
 
             <button

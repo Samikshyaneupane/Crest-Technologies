@@ -27,7 +27,7 @@ export default function ContactHero() {
 
         {/* LEFT */}
         <div>
-          <h1 className="md:text-[68px] lg:text-[82px]flex flex-col gap-[20px] lg:gap-[28px] text-[#00135C] font-bold leading-[70px] text-[45px] md:text-[60px] lg:text-[76px]">
+          <h1 className="md:text-[68px] lg:text-[82px]flex flex-col gap-[20px] lg:gap-[28px] text-[#00135C] font-bold leading-[70px] text-[45px] md:text-[60px] lg:text-[76px] translate-x-[-25px] ">
             Contact Us
           </h1>
 
