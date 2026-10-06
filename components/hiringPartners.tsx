@@ -6,23 +6,23 @@ import Image from "next/image";
 const partners = [
   {
     name: "WaterComm",
-    image: "/partners/watercomm.svg",
+    image: "/home/partners/watercomm.svg",
   },
   {
     name:"PlasmaTech",
-    image:"/partners/plasmatech.png",
+    image:"/home/partners/plasmatech.png",
   },
   {
     name:"Virtuosway",
-    image:"/partners/virtuosway.png",
+    image:"/home/partners/virtuosway.png",
   },
   {
     name:"Yuwasoft",
-    image:"/partners/yuwasoft.svg",
+    image:"/home/partners/yuwasoft.svg",
   },
   {
     name:"Eeposit",
-    image:"/partners/eeposit.png",
+    image:"/home/partners/eeposit.png",
   }
  
 ];
@@ -49,7 +49,7 @@ export default function HiringPartners() {
     <section className="overflow-hidden bg-white py-16">
 
       {/* TITLE */}
-      <h2 className="mb-12 text-center text-[30px] font-semibold text-black">
+      <h2 className="font-normal text-[35px] md:text-[40px] leading-[40px] tracking-[0] mb-[25px] text-center ">
         Our Hiring Partners
       </h2>
 
@@ -93,13 +93,13 @@ function PartnerLogo({
   partner: (typeof partners)[number];
 }) {
   return (
-    <div className="flex w-[220px] shrink-0 items-center justify-center px-8">
+    <div className="flex w-[280px] shrink-0 items-center justify-center px-8">
       <Image
         src={partner.image}
         alt={partner.name}
-        width={60}
-        height={70}
-        className="h-[120px] w-[180px] object-contain"
+        width={280}
+        height={140}
+        className="h-[140px] w-[240px] object-contain"
       />
     </div>
   );

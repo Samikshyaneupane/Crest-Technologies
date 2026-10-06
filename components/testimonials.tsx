@@ -182,20 +182,20 @@ function ReviewCard({
   review: (typeof reviews)[number];
 }) {
   return (
-    <div className="flex h-[418px] w-full flex-col rounded-[6px] bg-white px-[18px] py-[19px]">
+    <div className="flex h-[500px] w-full flex-col rounded-[6px] bg-white px-[18px] py-[19px]">
 
       {/* TITLE */}
-      <h3 className="text-[17px] font-bold leading-[1.3] text-[#111]">
+      <h3 className="font-bold text-[24px] text-[#292929] mb-4 leading-tight">
         {review.title}
       </h3>
 
       {/* COURSE */}
-      <p className="mt-4 text-[12px] font-bold text-[#001b67]">
+      <p className="font-bold text-[16px] text-[#00135C] mb-4 leading-tight">
         {review.course}
       </p>
 
       {/* REVIEW */}
-      <p className="mt-3 text-[11px] leading-[1.45] text-black">
+      <p className="mt-3  leading-[1.45] text-black text-sm mb-4">
         {review.review}
       </p>
 
@@ -210,7 +210,7 @@ function ReviewCard({
           className="h-[52px] w-[52px] rounded-full object-cover"
         />
 
-        <span className="text-[12px] font-bold text-black">
+        <span className="font-semibold text-[16px] text-black leading-tight">
           {review.name}
         </span>
 

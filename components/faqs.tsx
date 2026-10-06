@@ -56,13 +56,14 @@ export default function FAQs() {
     <>
       {/* FAQ SECTION  */}
 
-      <section className="bg-[#f5f6f7] px-3 py-5">
-        <div className="mx-auto grid max-w-[1200px] gap-6 lg:grid-cols-2">
+      <section className="bg-[#f5f6f7] px-3 py-5 pt-35">
+        {/* <div className="mx-auto grid max-w-[1170px] gap-8 lg:grid-cols-2"> */}
+        <div className="mx-auto grid max-w-[1170px] items-start gap-8 lg:grid-cols-2">
 
           {/*  LEFT FAQ CARD  */}
 
-          <div className="rounded-md bg-[#99CDFF] px-5 py-5 shadow-md">
-            <h2 className="mb-5 text-4xl font-bold text-[#172033]">
+          <div className="rounded-lg min-h-[500px] bg-[#99CDFF] px-5 py-5 shadow-md">
+            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-[#292929] mb-8">
               FAQs
             </h2>
 
@@ -70,13 +71,13 @@ export default function FAQs() {
               {faqs.map((faq, index) => (
                 <div
                   key={faq.question}
-                  className="border-b border-[#87b9e8] last:border-b-0"
+                
                 >
                   <button
                     onClick={() => toggleFAQ(index)}
-                    className="flex w-full items-center justify-between gap-4 py-3 text-left"
+                    className="flex w-full items-center justify-between gap-4 py-1 text-left"
                   >
-                    <span className="text-[14px] font-normal text-[#111827]">
+                    <span className=" w-full py-3 flex justify-between items-center text-left text-lg sm:text-xl text-[#292929] font-medium focus:outline-none">
                       {faq.question}
                     </span>
 
@@ -89,7 +90,7 @@ export default function FAQs() {
                   </button>
 
                   {openIndex === index && (
-                    <div className="pb-4 pr-8 text-[13px] leading-5 text-[#26364a]">
+                    <div className="overflow-hidden transition-all duration-200 ease-in-out max-h-40 opacity-100 pb-4 text-gray-700">
                       {faq.answer}
                     </div>
                   )}
@@ -101,15 +102,14 @@ export default function FAQs() {
 
             <button
               onClick={() => setShowContact(true)}
-              className="mt-6 rounded-full border border-transparent bg-[#FFCC00] px-6 py-2 text-[16px] text-[#292929] transition hover:border-blue-500 hover:bg-transparent hover:text-blue-500"
+              className="z-0 group relative inline-flex items-center justify-center box-border appearance-none select-none whitespace-nowrap subpixel-antialiased overflow-hidden tap-highlight-transparent data-[pressed=true]:scale-[0.97] outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 min-w-20 h-10 gap-2 [&>svg]:max-w-[theme(spacing.8)] transition-transform-colors-opacity motion-reduce:transition-none data-[hover=true]:opacity-hover text-[#292929] tracking-[0] text-[18px] lg:text-[24px] font-normal rounded-3xl bg-[#FFCC00] transition py-[22px] px-[30px] mt-4 hover:bg-transparent hover:border hover:border-blue-500 hover:text-blue-500"
             >
               For more information contact
             </button>
           </div>
 
-          {/* RIGHT CORPORATE CARD  */}
-
-          <div className="relative min-h-[405px] overflow-hidden rounded-md shadow-md">
+        {/* RIGHT CORPORATE CARD */}
+<div className="relative h-[540px] overflow-hidden rounded-md shadow-md">
             <Image
               src="/faq.jpg"
               alt="Corporate Training"
@@ -124,11 +124,11 @@ export default function FAQs() {
             {/* CONTENT */}
 
             <div className="relative z-10 flex h-full min-h-[405px] flex-col px-8 py-7">
-              <div className="w-fit rounded-md bg-[#00135C] px-3 py-2 text-[12px] font-bold text-white shadow-md">
+              <div className="z-0 group relative inline-flex items-center justify-center box-border appearance-none select-none whitespace-nowrap subpixel-antialiased overflow-hidden tap-highlight-transparent data-[pressed=true]:scale-[0.97] outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 min-w-20 h-10 gap-2 [&>svg]:max-w-[theme(spacing.8)] transition-transform-colors-opacity motion-reduce:transition-none data-[hover=true]:opacity-hover self-start bg-[#00135C] text-white font-bold text-lg mt-6 lg:mt-0 py-2 px-4 rounded-md mb-6 shadow-md">
                 CORPORATE TRAINING
               </div>
 
-              <h2 className="mt-12 max-w-[300px] text-4xl font-bold leading-[0.98] text-[#00135C]">
+              <h2 className="text-4xl lg:text-5xl font-bold text-[#00135C] max-w-xs sm:max-w-sm mb-6 mt-10 leading-tight">
                 Work place
                 <br />
                 Learning that
@@ -136,7 +136,7 @@ export default function FAQs() {
                 Works
               </h2>
 
-              <p className="mt-5 max-w-[330px] text-[17px] leading-6 text-[#292929]">
+              <p className="text-2xl text-[#292929] max-w-sm mb-8">
                 Skill your workforce in new age
                 <br />
                 technologies with our cutting edge
@@ -144,11 +144,30 @@ export default function FAQs() {
                 curriculum.
               </p>
 
-             
-              <Link
+    <Link
   href="/corporate"
   prefetch={false}
-  className="mt-6 w-fit rounded-full border border-transparent bg-[#FF5757] px-4 py-1.5 text-[19px] text-white transition hover:border-blue-500 hover:bg-transparent hover:text-blue-500"
+  className="
+    self-start
+    w-fit
+    shrink-0
+    inline-flex
+    items-center
+    justify-center
+    whitespace-nowrap
+    h-10
+    bg-[#FF5757]
+    rounded-3xl
+    text-white
+    font-normal
+    text-[24px]
+    leading-[100%]
+    px-[12px]
+    hover:bg-transparent
+    hover:text-blue-500
+    hover:border
+    hover:border-blue-500
+  "
 >
   Connect with us
 </Link>
