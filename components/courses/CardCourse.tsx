@@ -40,12 +40,12 @@ export default function CourseCard({
         <div className="flex flex-1 flex-col">
           
           {/* TITLE */}
-          <h3 className="mt-4 text-[21px] font-bold leading-[1.15] text-black">
+          <h3 className="text-xl md:text-2xl lg:text-3xl font-bold text-black mb-2 mt-4">
             {title}
           </h3>
 
           {/* DESCRIPTION */}
-          <p className="mt-3 text-[14px] leading-[1.55] text-gray-700">
+          <p className="text-lg md:text-xl text-[#464646] mb-4">
             {description}
           </p>
 
@@ -54,17 +54,17 @@ export default function CourseCard({
             
             {/* DURATION */}
             <div className="flex items-center gap-[7px]">
-              <div className="relative h-[23px] w-[23px] shrink-0">
+              <div className="relative h-[30px] w-[30px] shrink-0">
                 <Image
                   src="/courses/time.svg"
-                  alt=""
+                  alt="Time"
                   fill
                   className="object-contain"
-                  sizes="25px"
+                  sizes="30px"
                 />
               </div>
 
-              <span className="text-[15px] font-medium text-black">
+              <span className="text-[20px] font-medium text-black">
                 {duration}
               </span>
             </div>

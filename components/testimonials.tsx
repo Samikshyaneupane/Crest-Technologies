@@ -109,13 +109,13 @@ export default function Testimonials() {
   };
 
   return (
-    <section className="mt-10 flex min-h-[585px] items-center overflow-hidden bg-[#1A71E9] px-6 py-10">
+    <section className="mt-10 flex min-h-[800px] items-center overflow-hidden bg-[#1A71E9] px-6 py-10">
 
-      <div className="mx-auto grid w-full max-w-[1000px] grid-cols-1 items-center lg:grid-cols-2">
+      <div className="mx-auto grid w-full max-w-[1120px] grid-cols-1 items-center lg:grid-cols-2">
 
         {/* LEFT */}
-        <div className="w-full">
-          <h2 className="text-[36px] font-bold leading-[0.95] text-white">
+        <div className="w-full lg:-translate-x-[10px] mb-[20px]">
+          <h2 className="font-bold lg:max-w-[325px] text-[35px] md:text-[48px] leading-[44px] tracking-[0] text-[white]">
             Hear from our
             <br />
             learners
@@ -153,7 +153,7 @@ export default function Testimonials() {
             aria-label="Previous review"
             className="absolute left-[-22px] top-1/2 z-10 flex h-[44px] w-[44px] -translate-y-1/2 items-center justify-center rounded-full bg-white text-[#2475e8]"
           >
-            <ChevronLeft size={29} strokeWidth={2} />
+            <ChevronLeft size={40} strokeWidth={2} />
           </button>
 
           {/* RIGHT ARROW */}
@@ -162,7 +162,7 @@ export default function Testimonials() {
             aria-label="Next review"
             className="absolute right-[-22px] top-1/2 z-10 flex h-[44px] w-[44px] -translate-y-1/2 items-center justify-center rounded-full bg-white text-[#2475e8]"
           >
-            <ChevronRight size={29} strokeWidth={2} />
+            <ChevronRight size={40} strokeWidth={2} />
           </button>
 
           {/* BOTTOM LINE */}
@@ -182,7 +182,7 @@ function ReviewCard({
   review: (typeof reviews)[number];
 }) {
   return (
-    <div className="flex h-[500px] w-full flex-col rounded-[6px] bg-white px-[18px] py-[19px]">
+    <div className="flex h-[570px] w-full flex-col rounded-[6px] bg-white px-[18px] py-[19px]">
 
       {/* TITLE */}
       <h3 className="font-bold text-[24px] text-[#292929] mb-4 leading-tight">
@@ -195,19 +195,19 @@ function ReviewCard({
       </p>
 
       {/* REVIEW */}
-      <p className="mt-3  leading-[1.45] text-black text-sm mb-4">
+      <p className="mt-3  leading-[1.45] text-black text-sm ">
         {review.review}
       </p>
 
       {/* PERSON */}
-      <div className="mt-auto flex items-center gap-3">
+      <div className="mt-auto flex items-center">
 
         <Image
           src={review.image}
           alt={review.name}
-          width={52}
-          height={52}
-          className="h-[52px] w-[52px] rounded-full object-cover"
+          width={71}
+          height={71}
+          className="w-[71px] h-[71px] rounded-full mr-4 object-cover"
         />
 
         <span className="font-semibold text-[16px] text-black leading-tight">

@@ -16,31 +16,33 @@ export default function CourseHero({ course }: Props) {
     <>
       <section className="w-full bg-[#DCEEFF]">
         <div
-          className="
-            mx-auto
-            grid
-            max-w-[1500px]
-            grid-cols-1
-            items-center
-            gap-10
-            px-6
-            py-14
-            lg:min-h-[650px]
-            lg:grid-cols-[1.35fr_0.65fr]
-            lg:px-10
-            lg:py-16
-          "
-        >
+  className="
+    mx-auto
+    grid
+    max-w-[1500px]
+    grid-cols-1
+    items-start
+    gap-10
+    px-4
+    pt-10
+    pb-14
+    lg:min-h-[650px]
+    lg:grid-cols-[1.35fr_0.65fr]
+    lg:px-4
+    lg:pt-12
+    lg:pb-9
+  "
+>
           {/* LEFT */}
           <div className="min-w-0">
             {/* BREADCRUMB */}
-            <p className="text-[16px] text-[#333] md:text-[18px]">
+            <p className="font-normal text-[#464646] text-lg md:text-xl inline-block mb-5 ">
               <Link href="/" prefetch={false}>
                 Home
               </Link>{" "}
-              /{" "}
+              {" "}
               <Link href="/courses" prefetch={false}>
-                Courses
+                 /Courses
               </Link>
               / {course.title}
             </p>
@@ -48,15 +50,7 @@ export default function CourseHero({ course }: Props) {
             {/* TITLE */}
             <h1
               className="
-                mt-8
-                max-w-[900px]
-                text-[38px]
-                font-bold
-                leading-[1.08]
-                text-black
-                md:text-[48px]
-                lg:text-[52px]
-                xl:text-[55px]
+              font-bold text-3xl md:text-4xl lg:text-5xl text-black mt-5 mb-5
               "
             >
               {course.title}
@@ -65,12 +59,7 @@ export default function CourseHero({ course }: Props) {
             {/* DESCRIPTION */}
             <p
               className="
-                mt-5
-                max-w-[850px]
-                text-[17px]
-                leading-[1.6]
-                text-[#333]
-                md:text-[19px]
+               text-[#464646] font-normal text-lg md:text-xl
               "
             >
               {course.shortDescription}

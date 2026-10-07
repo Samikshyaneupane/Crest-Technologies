@@ -25,15 +25,15 @@ export default function CoursesHero() {
       {/* HERO CONTENT */}
       <div className="relative z-10 flex h-full items-center justify-center px-6">
         <div className="max-w-[1200px] text-center text-white">
-          <h1 className="text-[48px] font-bold leading-tight md:text-[72px]">
+          <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-4">
             Our Courses
           </h1>
 
-          <p className="mt-4 text-lg md:text-xl">
-            Master the skills to build fast, responsive, and scalable web
-            applications using ReactJS. This beginner-friendly to advanced
-            course offers hands-on experience, expert mentorship, and career
-            support to make you job-ready in just 10 weeks.
+          <p className="text-lg md:text-xl">
+        Master the skills to build fast, responsive, and scalable web applications using ReactJS. This beginner-
+        <br/>
+        friendly to advanced course offers hands-on experience, expert mentorship, and career support to make
+        <br/> you job-ready in just 10 weeks.
           </p>
 
    

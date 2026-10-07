@@ -122,10 +122,10 @@ export const courseData: Record<string, CourseData> = {
   "qa-automation": {
     slug: "qa-automation",
 
-    title: "QA with Automation",
+    title: "QA with automation",
 
     shortDescription:
-      "Master software testing and automation techniques to build reliable, high-quality applications using modern QA tools and practices.",
+      "Comprehensive QA training covering manual and automated testing with  Selenium, TestNG, and CI/CD integration",
 
     heroImage: "/courses/coursedetail.png",
     learners: "1000+",
@@ -136,7 +136,7 @@ export const courseData: Record<string, CourseData> = {
     duration: "10 Weeks",
 
     overview:
-      "Our QA Automation course helps learners understand modern software testing practices and develop practical automation skills. Learn testing fundamentals, test case creation, automation, API testing, and real-world QA workflows.",
+      "Dive into the world of Quality Assurance with our in-depth course that covers both manual and automated testing. Gain hands-on experience with industry-standard tools and frameworks, and learn how to ensure software quality and performance.",
 
     learn: [
       "Software Testing Fundamentals",
@@ -152,10 +152,10 @@ export const courseData: Record<string, CourseData> = {
     ],
 
     careers: [
-      "QA Automation Engineer",
-      "Software QA Engineer",
-      "Automation Test Engineer",
-      "Software Tester",
+      "QA Engineer",
+      "Test Automation Engineer",
+      "Quality Analyst",
+      "Software Test Engineer",
     ],
 
     projects: [

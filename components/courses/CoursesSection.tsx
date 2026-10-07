@@ -111,23 +111,32 @@ export default function CoursesSection() {
     <section className="w-full bg-white py-16 md:py-20">
       <div className="mx-auto max-w-[1500px] px-4 md:px-6 lg:px-8">
 
-        {/* FILTER BUTTONS */}
-        <div className="mb-10 flex flex-wrap gap-4">
-          {categories.map((category) => (
-            <button
-              key={category}
-              type="button"
-              onClick={() => setActiveCategory(category)}
-              className={`rounded-full px-8 py-3 text-[17px] font-medium transition-all duration-200 md:px-10 ${
-                activeCategory === category
-                  ? "bg-[#2176E8] text-white"
-                  : "bg-[#DCEBFC] text-black hover:bg-[#cbdff8]"
-              }`}
-            >
-              {category}
-            </button>
-          ))}
-        </div>
+      {/* FILTER BUTTONS */}
+<div className="mb-8 flex flex-wrap items-start gap-2 md:gap-4">
+  {categories.map((category) => (
+    <button
+      key={category}
+      type="button"
+      onClick={() => setActiveCategory(category)}
+      className={`
+        whitespace-nowrap
+        rounded-3xl
+        px-3 md:px-8
+        py-2
+        text-[20px] md:text-2xl
+        font-normal
+        transition-all duration-200
+        ${
+          activeCategory === category
+            ? "bg-[#1A71E9] text-white"
+            : "bg-[#DAEBFF] text-black hover:bg-[#cbdff8]"
+        }
+      `}
+    >
+      {category}
+    </button>
+  ))}
+</div>
 
         {/* COURSE GRID */}
         <div className="grid grid-cols-1 gap-5 md:grid-cols-2 lg:grid-cols-3">

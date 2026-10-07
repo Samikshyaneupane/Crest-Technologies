@@ -7,52 +7,58 @@ export default function Footer() {
       <footer className="bg-[#272727] text-white">
         {/* MAIN FOOTER */}
         <div
-          className="
-            mx-auto grid max-w-[1710px]
-            grid-cols-1
-            gap-10
-            px-6 py-10
-            sm:grid-cols-2 sm:px-8
-            md:grid-cols-3
-            lg:grid-cols-5 lg:gap-8 lg:px-10 lg:py-8
-            xl:px-12
-          "
+        className="
+  mx-auto grid max-w-[1710px]
+  grid-cols-1
+  gap-6
+  px-6 py-5
+  sm:grid-cols-2 sm:px-8
+  md:grid-cols-3
+  lg:grid-cols-5 lg:gap-3 lg:px-10 lg:py-4 lg:pt-7 lg:pb:1
+  xl:px-12
+"
         >
           {/* COLUMN 1 - CREST */}
           <div className="text-center sm:text-left">
-            <h2 className="mb-5 text-[32px] font-bold leading-none sm:text-[34px] lg:text-[36px]">
+            <h2 className="text-white font-bold text-4xl translate-x-[-30px]">
               CREST
             </h2>
 
-            <p className="mx-auto max-w-[280px] text-[14px] leading-[1.6] text-gray-200 sm:mx-0">
-              CREST Technologies is an upskilling platform in Nepal that
-              provides Live Online classes, Online & Physical Training Classes.
+            <p className="font:myraid mt-3 text-white text-base leading-tight font-normal translate-x-[-30px]">
+             CREST Technologies is an 
+             <br/>
+             upskilling platform in Nepal
+             <br/>
+              that provides Live Online 
+              <br/>
+              classes, Online & Physical 
+              <br/>Training Classes.
             </p>
           </div>
 
           {/* COLUMN 2 - ACCREDITED BY */}
           <div className="text-center sm:text-left">
-            <h3 className="mb-5 text-[18px] font-bold lg:text-[20px]">
+            <h3 className="text-white font-bold text-[19px] leading-none lg:mx-3 lg:mt-2 translate-x-[-20px]">
               ACCREDITED BY
             </h3>
 
-            <div className="mx-auto flex h-[90px] w-[90px] items-center justify-center rounded-full bg-white sm:mx-0">
+            <div className="mx-auto  mt-[15px] flex h-[80px] w-[80px] items-center justify-center rounded-full bg-white sm:mx-0">
               <Image
                 src="/iao-seal.png"
                 alt="IAO Accreditation"
-                width={80}
-                height={80}
-                className="h-[80px] w-[80px] object-contain"
+                width={68}
+                height={68}
+                className="h-[68px] w-[68px] object-contain"
               />
             </div>
           </div>
 
           {/* COLUMN 3 - COURSES */}
-          <div className="space-y-3 text-center sm:text-left">
+          <div className="space-y-2 text-center sm:text-left">
             <Link
               href="/courses"
               prefetch={false}
-              className="block text-[16px] transition hover:text-gray-300 lg:text-[17px]"
+              className="flex flex-col space-y-[11px] text-white lg:mt-5 text-[18.41px] leading-none font-normal"
             >
               Courses
             </Link>
@@ -75,11 +81,11 @@ export default function Footer() {
           </div>
 
           {/* COLUMN 4 - ABOUT */}
-          <div className="space-y-3 text-center sm:text-left">
+          <div className="space-y-2 text-center sm:text-left">
             <Link
               href="/about"
               prefetch={false}
-              className="block text-[16px] transition hover:text-gray-300 lg:text-[17px]"
+              className="flex flex-col space-y-[11px] text-white lg:mt-5 text-[18.41px] leading-none font-normal"
             >
               About us
             </Link>
@@ -102,11 +108,11 @@ export default function Footer() {
           </div>
 
           {/* COLUMN 5 - CONTACT */}
-          <div className="text-center sm:text-left">
+          <div className="text-center space-y-2 sm:text-left">
             <Link
               href="/contact"
               prefetch={false}
-              className="block text-[16px] transition hover:text-gray-300 lg:text-[17px]"
+              className="flex flex-col space-y-[11px] text-white lg:mt-5 text-[18.41px] leading-none font-normal"
             >
               Contact
             </Link>
@@ -165,32 +171,25 @@ export default function Footer() {
           </div>
         </div>
 
-        {/* BOTTOM FOOTER */}
-        <div className="border-t border-gray-500">
-          <div
-            className="
-              mx-auto flex max-w-[1710px]
-              flex-col items-center justify-center
-              gap-3
-              px-6 py-5
-              text-center text-[13px]
-              sm:text-[14px]
-              md:min-h-[75px] md:flex-row md:gap-10 md:py-2
-              lg:text-[15px]
-            "
-          >
-            <p>© 2026 - Crest Technologies. All rights reserved</p>
+       {/* BOTTOM FOOTER */}
+<div className="border-t border-white text-white mt-6 pt-4 ">
+  <div
+    className="
+    flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-10 text-[18.41px]
+    "
+  >
+    <p>© 2026 - Crest Technologies. All rights reserved</p>
 
-            <Link
-              href="/privacy-policy"
-              prefetch={false}
-              className="transition hover:text-gray-300"
-            >
-              Privacy Policy
-            </Link>
-          </div>
-        </div>
-      </footer>
+    <Link
+      href="/privacy-policy"
+      prefetch={false}
+      className="transition hover:text-gray"
+    >
+      Privacy Policy
+    </Link>
+  </div>
+</div>
+</footer>
 
       {/* FLOATING WHATSAPP BUTTON */}
       <a
