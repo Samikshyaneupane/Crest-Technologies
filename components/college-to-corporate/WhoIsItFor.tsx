@@ -56,7 +56,7 @@ export default function WhoIsItFor() {
       </div>
 
       {/* BLUE SECTION */}
-      <div className="w-full bg-[#DCEEFF]">
+      <div className="w-full bg-[#DAEBFF]">
         <div className="mx-auto grid max-w-[1700px] grid-cols-1 px-6 py-8 md:grid-cols-3 lg:px-10">
 
           {audiences.map((item, index) => (
@@ -73,18 +73,18 @@ export default function WhoIsItFor() {
                     src={item.image}
                     alt=""
                     fill
-                    className="object-contain"
+                    className="object-contain translate-x-[-25px]" 
                     sizes="100px"
                   />
                 </div>
 
                 {/* TEXT */}
-                <p className="text-[17px] leading-[1.45] text-black md:text-[19px]">
+                <p className="text-black text-lg md:text-xl lg:text-2xl font-normal leading-relaxed px-4 sm:px-0 max-w-[276px]">
                   {item.text}
                 </p>
 
                 {/* YELLOW DIVIDER */}
-                {index !== audiences.length - 1 && (
+                {index !== audiences.length  && (
                   <div
                     className="
                       absolute

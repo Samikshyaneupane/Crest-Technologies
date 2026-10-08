@@ -54,7 +54,7 @@ export default function CourseCards() {
     <>
       {/* COURSES SECTION */}
       <section id="courses" className="scroll-mt-20 bg-white py-16">
-        <div className="mx-auto grid max-w-7xl grid-cols-1 gap-3.5 px-6 sm:grid-cols-3 ">
+        <div className="mx-auto grid max-w-[1500px] grid-cols-1 gap-3.5 px-4 sm:grid-cols-3">
           {courses.map((course) => (
             <div
               key={course.title}
@@ -62,11 +62,11 @@ export default function CourseCards() {
             >
               {/* Course Info */}
               <div>
-                <h2 className="text-2xl font-bold text-[#0B1F5C]">
+                <h2 className="text-[28px] font-bold text-[#00135C] leading-[100%] tracking-[0%]">
                   {course.title}
                 </h2>
 
-                <div className="mt-4 space-y-3 text-md text-[#0B1F5C]">
+                <div className="mt-8 space-y-3 text-md text-[#0B1F5C]">
                   {/* Duration */}
                   <div className="flex items-center gap-3">
                     <Calendar
@@ -78,7 +78,7 @@ export default function CourseCards() {
                   </div>
 
                   {/* Mode */}
-                  <div className="flex items-center gap-3">
+                  <div className="flex items-center gap-3 ">
                     <PlayCircle
                       className="h-6 w-6  text-[#0B1F5C]"
                       strokeWidth={2}
@@ -90,7 +90,7 @@ export default function CourseCards() {
               </div>
 
               {/* Buttons */}
-              <div className="mt-4 flex gap-3">
+              <div className="mt-4 flex gap-3 translate-x-[5px]">
                 {/* View */}
                 <Link
                   href="#"

@@ -31,10 +31,10 @@ export default function ContactHero() {
             Contact Us
           </h1>
 
-          <div className="mt-12 max-w-[650px] space-y-8">
+     <div className="mt-12 w-full space-y-5 lg:w-[750px] lg:max-w-none lg:translate-x-[-25px]">
 
             {/* PHONE */}
-            <div className="bg-white px-4 py-4">
+            <div className="bg-white px-4 py-3">
               <div className="flex items-center gap-3 ">
                 <div className="flex h-[40px] w-[40px] items-center justify-center bg-[#DAEBFF]">
                   <Phone size={26} strokeWidth={2} />
@@ -45,13 +45,13 @@ export default function ContactHero() {
                 </h2>
               </div>
 
-              <p className="mt-7 text-[20px] text-[#666666]">
+              <p className="mt-1 text-[20px] text-[#666666]">
                 +977-9857084388
               </p>
             </div>
 
             {/* EMAIL */}
-            <div className="bg-white px-4 py-4">
+            <div className="bg-white px-4 py-3">
               <div className="flex items-center gap-3">
                 <div className="flex h-[40px] w-[40px] items-center justify-center bg-[#DCEEFF]">
                   <Mail size={27} strokeWidth={2} />
@@ -62,13 +62,13 @@ export default function ContactHero() {
                 </h2>
               </div>
 
-              <p className="mt-7 text-[20px] text-[#666666]">
+              <p className="mt-4  text-[20px] text-[#666666]">
                 info@cresttechhub.com
               </p>
             </div>
 
             {/* ADDRESS */}
-            <div className="bg-white px-4 py-4">
+            <div className="bg-white px-4 py-3">
               <div className="flex items-center gap-3">
                 <div className="flex h-[40px] w-[40px] items-center justify-center bg-[#DCEEFF]">
                   <MapPin size={27} strokeWidth={2} />
@@ -79,7 +79,7 @@ export default function ContactHero() {
                 </h2>
               </div>
 
-              <p className="mt-7 text-[20px] text-[#666666]">
+              <p className="mt-4 text-[20px] text-[#666666]">
                 Old Baneshwor, Kathmandu, Nepal
               </p>
             </div>

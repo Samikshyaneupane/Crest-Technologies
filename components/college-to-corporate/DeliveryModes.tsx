@@ -21,7 +21,7 @@ export default function DeliveryModes() {
       <div className="mx-auto w-full max-w-[1500px] px-6 lg:px-8">
 
         {/* TITLE */}
-        <h2 className="text-center text-[32px] font-bold leading-tight text-[#00135C] md:text-[38px] lg:text-[42px]">
+        <h2 className="font-bold leading-[0px] tracking-[0%] text-[#00135C] text-3xl md:text-4xl lg:text-5xl my-10 text-center">
           Delivery Modes
         </h2>
 
@@ -30,7 +30,7 @@ export default function DeliveryModes() {
           {modes.map((mode) => (
             <div
               key={mode.title}
-              className="flex h-[250px] flex-col items-center justify-center rounded-[9px] bg-[#DCEEFF] px-5 py-5 transition-colors duration-300 hover:bg-[#C7DDF4]"
+              className="flex h-[210px] flex-col items-center justify-center rounded-[9px] bg-[#DCEEFF] px-5 py-5 transition-colors duration-300 hover:bg-[#C7DDF4]"
             >
               {/* IMAGE */}
               <div className="relative h-[130px] w-[180px]">

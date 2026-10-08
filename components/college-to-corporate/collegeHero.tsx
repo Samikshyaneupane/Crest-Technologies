@@ -35,26 +35,26 @@ export default function CollegeHero() {
           <div className="w-full lg:w-[45%]">
 
             {/* HEADING */}
-            <h1 className="mb-[30px] text-4xl font-bold leading-[100%] tracking-[0] text-[#00135C] md:text-4xl lg:text-5xl">
+            <h1 className="mb-[30px] text-4xl font-bold leading-[100%] tracking-[0] text-[#00135C] md:text-4xl lg:text-5xl translate-x-[6px]">
               Join our College to
               <br />
-              Corporate Programme
+              Corporate Programe
             </h1>
 
             {/* DESCRIPTION */}
-            <p className="mb-[30px] text-xl font-normal leading-[150%] tracking-[0%] md:text-2xl lg:text-lg">
+            <p className="font-normal text-xl md:text-2xl leading-[150%] tracking-[0%]">
               Exclusive for Students and Recent Passouts
               <br className="hidden md:block" />
-              Join our placement-linked programs and become &apos;day
+              Join our placement-linked programs and become 
               <br className="hidden md:block" />
-              one job-ready&apos; professionals
+            &apos;day one job-ready&apos; professionals 
             </p>
 
             {/* CONTACT FOR MORE BUTTON */}
             <button
               type="button"
               onClick={() => setShowContact(true)}
-              className="inline-flex h-12 items-center justify-center rounded-full bg-[#FFCC00] px-7 text-[18px] font-medium text-black transition-all duration-300 hover:border hover:border-blue-500 hover:bg-transparent hover:text-blue-500"
+              className="z-0 mt-5 group relative inline-flex items-center justify-center box-border appearance-none select-none whitespace-nowrap subpixel-antialiased overflow-hidden tap-highlight-transparent data-[pressed=true]:scale-[0.97] outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 px-4 min-w-20 h-10 gap-2 [&>svg]:max-w-[theme(spacing.8)] transition-transform-colors-opacity motion-reduce:transition-none data-[hover=true]:opacity-hover bg-[#FFCC00] rounded-3xl text-black font-normal text-xl lg:text-2xl md:py-6 md:px-6 hover:bg-transparent hover:border hover:border-blue-500 hover:text-blue-500"
             >
               Contact for more
             </button>
