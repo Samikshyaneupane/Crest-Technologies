@@ -16,15 +16,15 @@ export default function UpcomingBatch({ course }: Props) {
             relative
             z-30
             mx-auto
-            max-w-[1150px]
+            max-w-[1000px]
             -translate-y-[95px]
             border
             border-[#333]
             bg-white
             px-8
-            py-12
+            py-8
             md:px-12
-            md:py-14
+            md:py-8
           "
         >
           {/* TITLE */}

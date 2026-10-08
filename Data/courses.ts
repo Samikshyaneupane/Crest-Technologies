@@ -470,10 +470,9 @@ export const courseData: Record<string, CourseData> = {
 
   // UI/UX DESIGN & PRODUCT DESIGN
  
-  "ui-ux-product-design": {
-    slug: "ui-ux-product-design",
-
-    title: "UI/UX Design & Product Design",
+"ui-ux-design": {
+  slug: "ui-ux-design",
+  title: "UI/UX Design & Product Design",
 
     shortDescription:
       "Learn to design intuitive digital products through user research, wireframing, prototyping, visual design, and user-centered design principles.",
@@ -539,10 +538,9 @@ export const courseData: Record<string, CourseData> = {
 
   // FULL STACK DEVELOPMENT (MERN)
 
-  "full-stack-development-mern": {
-    slug: "full-stack-development-mern",
-
-    title: "Full Stack Development (MERN)",
+ "mern-development": {
+  slug: "mern-development",
+  title: "Full Stack Development (MERN)",
 
     shortDescription:
       "Master full-stack web development using MongoDB, Express.js, ReactJS, and Node.js and build complete production-ready web applications.",

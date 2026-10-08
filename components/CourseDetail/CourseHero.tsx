@@ -35,36 +35,44 @@ export default function CourseHero({ course }: Props) {
 >
           {/* LEFT */}
           <div className="min-w-0">
-            {/* BREADCRUMB */}
-            <p className="font-normal text-[#464646] text-lg md:text-xl inline-block mb-5 ">
-              <Link href="/" prefetch={false}>
-                Home
-              </Link>{" "}
-              {" "}
-              <Link href="/courses" prefetch={false}>
-                 /Courses
-              </Link>
-              / {course.title}
-            </p>
+      {/* BREADCRUMB */}
+<p className="font-normal text-[#464646] text-lg md:text-xl inline-block mb-5">
+  <Link href="/" prefetch={false}>
+    Home
+  </Link>
+  {" /Courses/ "}
+  {course.title}
+</p>
 
-            {/* TITLE */}
-            <h1
-              className="
-              font-bold text-3xl md:text-4xl lg:text-5xl text-black mt-5 mb-5
-              "
-            >
-              {course.title}
-            </h1>
+{/* COURSE TITLE */}
+<h1 className="font-bold text-black text-3xl md:text-4xl lg:text-5xl leading-tight mb-5">
+  {course.title === "Frontend Development with ReactJS" ? (
+    <>
+      Frontend Development with
+      <br />
+      ReactJS
+    </>
+  ) : course.title === "UI/UX Design & Product Design" ? (
+    <>
+      UI/UX Design & Product 
+      <br />
+      Design
+    </>
+  ) : course.title === "Full Stack Development (MERN)" ? (
+    <>
+      Full Stack Development
+      <br />
+      (MERN)
+    </>
+  ) : (
+    course.title
+  )}
+</h1>
 
-            {/* DESCRIPTION */}
-            <p
-              className="
-               text-[#464646] font-normal text-lg md:text-xl
-              "
-            >
-              {course.shortDescription}
-            </p>
-
+{/* DESCRIPTION */}
+<p className="text-[#464646] font-normal text-lg md:text-xl">
+  {course.shortDescription}
+</p>
             {/* RATING + LEARNERS */}
             <div className="mt-8 flex flex-wrap items-center">
               {/* TRUSTPILOT */}

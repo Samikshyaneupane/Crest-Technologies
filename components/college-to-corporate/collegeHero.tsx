@@ -5,10 +5,10 @@ import Image from "next/image";
 import { Clock3, Mail, MapPin, Phone, X } from "lucide-react";
 
 const slides = [
-  "/corporate/CP1.webp",
-  "/corporate/CP2.webp",
-  "/corporate/CP3.webp",
-  "/corporate/CP4.webp",
+  "/college-to-corporate/CP1.webp",
+  "/college-to-corporate/CP2.webp",
+  "/college-to-corporate/CP3.webp",
+  "/college-to-corporate/CP4.webp",
 ];
 
 export default function CollegeHero() {

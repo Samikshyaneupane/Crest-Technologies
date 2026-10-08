@@ -6,28 +6,28 @@ import Image from "next/image";
 const partners = [
   {
     name: "WaterComm",
-    image: "/partners/watercomm.svg",
+    image: "/home/partners/watercomm.svg",
   },
   {
     name:"PlasmaTech",
-    image:"/partners/plasmatech.png",
+    image:"/home/partners/plasmatech.png",
   },
   {
     name:"Virtuosway",
-    image:"/partners/virtuosway.png",
+    image:"/home/partners/virtuosway.png",
   },
   {
     name:"Yuwasoft",
-    image:"/partners/yuwasoft.svg",
+    image:"/home/partners/yuwasoft.svg",
   },
   {
     name:"Eeposit",
-    image:"/partners/eeposit.png",
+    image:"/home/partners/eeposit.png",
   }
  
 ];
 
-export default function TrustedBy() {
+export default function HiringPartners() {
   const [index, setIndex] = useState(0);
 
   // AUTO SLIDE
@@ -40,7 +40,7 @@ export default function TrustedBy() {
 
         return current + 1;
       });
-    }, 2000);
+    },500);
 
     return () => clearInterval(timer);
   }, []);
@@ -49,12 +49,12 @@ export default function TrustedBy() {
     <section className="overflow-hidden bg-white py-16">
 
       {/* TITLE */}
-      <h2 className="mb-12 text-center text-[30px] font-semibold text-black">
-        Trusted By 
+      <h2 className="font-bold text-[28px] leading-[100%] tracking-[0] mb-[25px] text-start text-[#00135C] translate-x-[30px]">
+        Trusted By
       </h2>
 
       {/* SLIDER VIEW */}
-      <div className="mx-auto max-w-[1100px] overflow-hidden">
+      <div className="mx-auto max-w-[1200px] overflow-hidden">
 
         {/* SLIDING TRACK */}
         <div
@@ -93,13 +93,13 @@ function PartnerLogo({
   partner: (typeof partners)[number];
 }) {
   return (
-    <div className="flex w-[220px] shrink-0 items-center justify-center px-8">
+    <div className="flex w-[280px] shrink-0 items-center justify-center px-8">
       <Image
         src={partner.image}
         alt={partner.name}
-        width={60}
-        height={70}
-        className="h-[120px] w-[180px] object-contain"
+        width={280}
+        height={140}
+        className="h-[140px] w-[240px] object-contain"
       />
     </div>
   );

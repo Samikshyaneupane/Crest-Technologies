@@ -48,12 +48,12 @@ export default function CorporateFAQ() {
 
   return (
     <>
-      <section id="enroll" className="w-full bg-white py-14">
-        <div className="mx-auto grid max-w-[1450px] grid-cols-1 items-start gap-8 px-6 lg:grid-cols-2">
+      <section id="enroll" className="pb-12 pt-5 md:pt-10 md:pv-20 px-4 font-myriad ">
+        <div className="max-w-7xl mx-auto grid md:grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-8 items-start md:px-4 mb-10 md:mb-14 lg:mb-16">
           
-          {/* ================= FAQ LEFT ================= */}
+          {/*  FAQ LEFT */}
           <div className="rounded-[7px] bg-[#D9EAFE] px-6 py-7 shadow-md">
-            <h2 className="mb-8 text-[40px] font-bold text-[#001B69] md:text-[46px]">
+            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-[#00135C] mb-8">
               FAQs
             </h2>
 
@@ -66,9 +66,9 @@ export default function CorporateFAQ() {
                   <button
                     type="button"
                     onClick={() => toggleFAQ(index)}
-                    className="flex w-full items-center justify-between py-4 text-left"
+                    className="flex w-full items-center justify-between py-3 text-left"
                   >
-                    <span className="text-[18px] text-black md:text-[19px]">
+                    <span className=" font-normal text-[20px] text-black md:text-[20px]">
                       {faq.question}
                     </span>
 
@@ -93,20 +93,20 @@ export default function CorporateFAQ() {
             <button
               type="button"
               onClick={() => setShowContact(true)}
-              className="mt-10 rounded-full border border-transparent bg-[#FFCC00] px-8 py-2.5 text-[19px] text-black transition hover:border-blue-500 hover:bg-transparent hover:text-blue-500"
+              className="mt-10 z-0 group relative inline-flex items-center justify-center box-border appearance-none select-none whitespace-nowrap subpixel-antialiased overflow-hidden tap-highlight-transparent data-[pressed=true]:scale-[0.97] outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 min-w-20 h-10 gap-2 [&>svg]:max-w-[theme(spacing.8)] transition-transform-colors-opacity motion-reduce:transition-none data-[hover=true]:opacity-hover text-[#292929] tracking-[0] text-[18px] lg:text-[24px] font-normal rounded-3xl bg-[#FFCC00] transition py-[22px] px-[30px] hover:bg-transparent hover:border hover:border-blue-500 hover:text-blue-500"
             >
               For more information contact
             </button>
           </div>
 
-          {/* ================= ENROLL FORM RIGHT ================= */}
-          <div className="rounded-[7px] bg-[#D9EAFE] px-6 py-7 shadow-md">
-            <h2 className="mb-6 text-[34px] font-bold text-[#001B69]">
+          {/*  ENROLL FORM RIGHT  */}
+          <div className="bg-[#DAEBFF] p-6 rounded-lg shadow-md">
+            <h2 className="text-3xl sm:text-4xl font-bold text-[#00135C] mb-6">
               Enroll now
             </h2>
 
             <form
-              className="flex flex-col gap-4"
+              className="flex flex-col space-y-4"
               onSubmit={(e) => e.preventDefault()}
             >
               {/* NAME */}
@@ -115,7 +115,7 @@ export default function CorporateFAQ() {
                 name="name"
                 placeholder="Full Name"
                 required
-                className="h-[50px] w-full rounded-[7px] border border-[#cccccc] bg-white px-4 text-[15px] outline-none transition focus:border-[#2475E9]"
+                className="w-full bg-white p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#1A71E9]"
               />
 
               {/* NUMBER */}
@@ -124,7 +124,7 @@ export default function CorporateFAQ() {
                 name="number"
                 placeholder="Number"
                 required
-                className="h-[50px] w-full rounded-[7px] border border-[#cccccc] bg-white px-4 text-[15px] outline-none transition focus:border-[#2475E9]"
+                className="w-full p-3 bg-white border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#1A71E9]"
               />
 
               {/* ADDRESS */}
@@ -133,7 +133,7 @@ export default function CorporateFAQ() {
                   type="text"
                   name="address"
                   placeholder="Address"
-                  className="h-[50px] w-full rounded-[7px] border border-[#cccccc] bg-white px-4 pr-24 text-[15px] outline-none transition focus:border-[#2475E9]"
+                  className="w-full p-3 bg-white border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#1A71E9]"
                 />
 
                 <span className="pointer-events-none absolute right-4 top-1/2 -translate-y-1/2 text-[13px] text-gray-400">
@@ -185,7 +185,7 @@ export default function CorporateFAQ() {
         </div>
       </section>
 
-      {/* ================= CONTACT POPUP ================= */}
+      {/* CONTACT POPUP  */}
       {showContact && (
         <div
           className="fixed inset-0 z-[9999] flex items-center justify-center bg-black/50 p-4"

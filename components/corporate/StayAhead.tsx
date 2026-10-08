@@ -26,7 +26,7 @@ export default function StayAhead() {
         <div className="flex w-full justify-center lg:w-[42%] lg:justify-end">
           <div className="relative h-[450px] w-full max-w-[500px] overflow-hidden md:h-[400px]">
             <Image
-              src="/corporate/stayahead.jpg"
+              src="/corporate/boy.jpg"
               alt="Corporate technology training"
               fill
               className="object-cover"

@@ -33,7 +33,7 @@ export default function TrainingFeatures() {
       <div className="mx-auto max-w-[1500px] px-6 lg:px-8">
 
         {/* TITLE */}
-        <h2 className="text-center text-[38px] font-bold text-[#001B69] md:text-[50px]">
+        <h2 className="text-[#00135C] font-bold text-center text-3xl md:text-4xl lg:text-5xl mb-12">
           Training Features
         </h2>
 
@@ -60,7 +60,7 @@ export default function TrainingFeatures() {
                 </div>
 
                 {/* TEXT */}
-                <p className="text-md font-normal text-[#6d6d6d] md:text-xl lg:text-[20px]">
+                <p className="text-lg md:text-xl lg:text-2xl font-normal text-[#6d6d6d]">
                   {feature.title}
                 </p>
 

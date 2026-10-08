@@ -12,7 +12,7 @@ export default function CorporateHero() {
       <section className="w-full bg-white">
         <div className="mx-auto flex min-h-[540px] max-w-[1500px] items-center px-4 py-2 lg:px-4">
           {/* LEFT SIDE */}
-          <div className="w-[60%]">
+          <div className="w-[50%]">
          <h1 className="font-bold text-[#00135C] text-3xl md:text-4xl lg:text-5xl mt-4 mb-5">
   Empower Your  Workforce
   <br />
@@ -37,8 +37,8 @@ export default function CorporateHero() {
           </div>
 
           {/* RIGHT SIDE */}
-          <div className="-mr-8 flex w-[40%] items-center justify-start">
-            <div className="relative h-[600px] w-[600px] leading-[100%]">
+          <div className="-mr-8 flex w-[50%] items-center justify-start">
+            <div className="relative h-[600px] w-[600px] leading-[100%] translate-x-[38px] ">
               <Image
                 src="/corporate/corporateHero.png"
                 alt="Corporate Training"
@@ -46,6 +46,7 @@ export default function CorporateHero() {
                 loading="lazy"
                 decoding="async"
                 sizes="(max-width: 1024px) 100vw, 600px"
+
                 className="object-contain"
               />
             </div>

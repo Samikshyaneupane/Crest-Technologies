@@ -2,7 +2,7 @@
 
 import { useEffect, useState } from "react";
 import Image from "next/image";
-import { ChevronLeft, ChevronRight, Star } from "lucide-react";
+import { ChevronLeft, ChevronRight } from "lucide-react";
 
 const testimonials = [
   {
@@ -189,30 +189,35 @@ function TestimonialCard({
       <p className="mt-2 text-[17px] text-[#666666]">
         {testimonial.company}
       </p>
+{/* RATING */}
+<div className="mt-5 flex items-center justify-center gap-2">
+  <div className="flex items-center gap-1">
+    {[1, 2, 3, 4, 5].map((star) => (
+      <Image
+        key={star}
+        src={
+          star === 5
+            ? "/home/halfstar.svg"
+            : "/home/yellowstar.svg"
+        }
+        alt={star === 5 ? "Half Star" : "Star"}
+        width={star === 5 ? 30 : 24}
+        height={star === 5 ? 30 : 24}
+        className={
+          star === 5
+            ? "h-[25px] w-[25px] object-contain  translate-y-[1px] translate-x-[-1px]"
+            : "h-[22px] w-[22px] object-contain"
+        }
+      />
+    ))}
+  </div>
 
-      {/* RATING */}
-      <div className="mt-5 flex items-center justify-center gap-2">
-        <div className="flex gap-1">
-          {[1, 2, 3, 4].map((star) => (
-            <Star
-              key={star}
-              size={20}
-              className="fill-[#FFCC00] text-[#FFCC00]"
-            />
-          ))}
 
-          {/* HALF-STYLE LAST STAR */}
-          <Star
-            size={20}
-            className="fill-[#FFCC00] text-[#FFCC00]"
-          />
-        </div>
 
-        <span className="ml-1 text-[15px] font-semibold text-[#555555]">
-          ({testimonial.rating})
-        </span>
-      </div>
-
+  <span className="ml-1 text-[15px] font-semibold text-[#555555]">
+    ({testimonial.rating})
+  </span>
+</div>
       {/* REVIEW */}
       <p className="mt-7 max-w-[600px] text-[20px] leading-[1.5] text-black">
         {testimonial.review}
