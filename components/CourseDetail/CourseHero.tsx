@@ -81,7 +81,7 @@ export default function CourseHero({ course }: Props) {
                <Image
   src="/Courses/trustpilot.svg"
   alt="Trustpilot"
-  width={145}
+  width={120}
   height={34}
   className="h-auto w-[145px] object-contain"
 />
@@ -89,15 +89,15 @@ export default function CourseHero({ course }: Props) {
 
                 {/* STARS */}
                 <div className="mt-5 flex items-center gap-3">
-                  <div className="flex items-center gap-[10px]">
+                  <div className="flex items-center gap-[10px] mb-[25px]">
                     {[1, 2, 3, 4].map((star) => (
                       <Image
                         key={star}
                         src="/Courses/stars.svg"
                         alt="Trustpilot star"
-                        width={24}
-                        height={24}
-                        className="h-[24px] w-[24px] object-contain"
+                        width={28}
+                        height={28}
+                        className="h-[28px] w-[28px] object-contain"
                       />
                       
                     ))}
@@ -105,28 +105,28 @@ export default function CourseHero({ course }: Props) {
                     <Image
                       src="/Courses/halfstars.svg"
                       alt="Trustpilot half star"
-                      width={24}
-                      height={24}
-                      className="h-[24px] w-[24px] object-contain"
+                      width={22}
+                      height={22}
+                      className="h-[22px] w-[22px] object-contain"
                     />
                   </div>
 
-                  <span className="text-[18px] text-[#222]">
+                  <span className="hidden md:flex font-normal text-[#464646] text-lg md:text-xl lg:text-2xl mb-[25px]">
                     ({course.rating})
                   </span>
                 </div>
               </div>
 
               {/* DIVIDER */}
-              <div className="mx-9 hidden h-[92px] w-px bg-[#777] sm:block" />
+              <div className="mx-9 hidden h-[75px] w-[1px] bg-[black] sm:block translate-[-5px]" />
 
               {/* LEARNERS */}
-              <div className="mt-6 sm:mt-0">
-                <p className="text-[18px] font-bold uppercase text-[#555]">
-                  Learners Enrolled
+              <div className="">
+                <p className="text-[#6d6d6d] font-bold text-lg md:text-xl mb-[20px] ">
+                  LEARNERS ENROLLED
                 </p>
 
-                <p className="mt-6 text-[18px] text-[#555]">
+                <p className="text-[#6d6d6d] font-normal text-lg md:text-xl ">
                   {course.learners}
                 </p>
               </div>

@@ -129,7 +129,7 @@ export const courseData: Record<string, CourseData> = {
 
     heroImage: "/Courses/Coursedetail.png",
     learners: "1000+",
-    rating: "4.5",
+    rating: "5",
 
     date: "Enrollment Based",
     schedule: "Sunday to Thursday",
@@ -269,7 +269,7 @@ export const courseData: Record<string, CourseData> = {
 
     heroImage: "/Courses/Coursedetail.png",
     learners: "900+",
-    rating: "4.5",
+    rating: "5",
 
     date: "Enrollment Based",
     schedule: "Sunday to Thursday",
@@ -340,7 +340,7 @@ export const courseData: Record<string, CourseData> = {
 
     heroImage: "/Courses/Coursedetail.png",
     learners: "1100+",
-    rating: "4.5",
+    rating: "5",
 
     date: "Enrollment Based",
     schedule: "Sunday to Thursday",

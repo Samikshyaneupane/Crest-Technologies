@@ -20,10 +20,10 @@ export default function ContactHero() {
 
     return () => clearInterval(interval);
   }, []);
-
+ 
   return (
-    <section className="font:myaid w-full bg-[#DCEEFF]">
-      <div className="mx-auto grid max-w-[1500px] grid-cols-1 gap-12 px-6 py-16 lg:grid-cols-[1.25fr_0.75fr] lg:px-10 lg:py-24">
+    <section className="font:myraid w-full bg-[#DCEEFF]">
+      <div className="mx-auto grid max-w-[1700px] grid-cols-1 gap-12 px-6 py-16 lg:grid-cols-[750px_minmax(0,1fr)] lg:gap-8 lg:px-10 lg:py-24">
 
         {/* LEFT */}
         <div>
@@ -87,10 +87,10 @@ export default function ContactHero() {
         </div>
 
         {/* RIGHT IMAGE SLIDER */}
-        <div className="flex items-center justify-center lg:pt-14">
-          <div className="w-full max-w-[700px]">
+     <div className="flex min-w-0 items-center justify-center lg:pt-14">
+  <div className="w-full">
 
-            <div className="relative h-[500px] w-full overflow-hidden">
+            <div className="relative h-[450px] w-full overflow-hidden translate-x-[10px]">
               {images.map((image, index) => (
                 <Image
                   key={image}

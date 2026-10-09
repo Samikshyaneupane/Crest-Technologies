@@ -122,4 +122,4 @@ export default function ProjectsAndClasses({ course }: Props) {
       </div>
     </section>
   );
-}
+}  

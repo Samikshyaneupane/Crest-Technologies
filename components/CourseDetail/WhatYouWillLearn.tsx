@@ -127,8 +127,8 @@ export default function WhatYouWillLearn({ course }: Props) {
 </div>
 
 
-        {/*= RIGHT FORM  */}
-        <div className="rounded-[12px] max-h-[520px] bg-white p-7 text-black shadow-lg md:p-9">
+        {/*= RIGHT FORM  */
+        <div className="rounded-[12px] max-h-[520px] bg-white p-7 text-black shadow-lg md:p-7">
 
           <h3 className="text-[#00135C] font-bold text-[22px] lg:text-[28px] mb-6">
             Request more Information
@@ -190,7 +190,10 @@ export default function WhatYouWillLearn({ course }: Props) {
 
           </form>
         </div>
+
+}
       </div>
+        
     </section>
   );
 }
