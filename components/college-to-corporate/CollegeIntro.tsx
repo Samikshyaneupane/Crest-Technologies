@@ -3,7 +3,7 @@ import Image from "next/image";
 export default function CollegeIntro() {
   return (
     <section className="w-full bg-white">
-      <div className="mx-auto grid min-h-[600px] max-w-[1800px] grid-cols-1 items-center gap-8 px-6 py-8 lg:grid-cols-[55%_45%] lg:px-6 lg:py-10">
+   <div className="mx-auto grid w-full min-h-[600px] max-w-[1800px] grid-cols-1 items-center gap-8 px-6 py-8 lg:grid-cols-[55fr_45fr] lg:px-6 lg:py-10">
 
         {/* LEFT SIDE */}
         <div>

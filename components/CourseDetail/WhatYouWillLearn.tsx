@@ -17,84 +17,124 @@ export default function WhatYouWillLearn({ course }: Props) {
     <section className="w-full bg-[#001B69] py-16 text-white md:py-20">
       <div className="mx-8 grid max-w-[1300px] grid-cols-1 gap-12 px-6 lg:grid-cols-[1.1fr_0.9fr] lg:gap-20">
 
-        {/*LEFT SIDE  */}
-        <div>
-          <h2 className="mb-10 font-bold text-[22px] md:text-[26px] lg:text-[22px]">
-            What You Will Learn
-          </h2>
+      
 
-          <div className="mt-8 space-y-5">
-            {course.learn.map((item) => (
-              <div
-                key={item}
-                className="group flex cursor-default items-start gap-4"
-              >
-                {/* IMAGE ANIMATION */}
-                <div className="relative mt-[2px] h-[35px] w-[35px] shrink-0 overflow-hidden">
+{/* LEFT SIDE */}
+<div>
+  <h2 className="mb-10 text-[22px] font-bold md:text-[26px] lg:text-[22px]">
+    What You Will Learn
+  </h2>
 
-                  {/* FIRST IMAGE */}
-                  <Image
-                    src="/Courses/learn1.svg"
-                    alt=""
-                    fill
-                    className="
-                      object-contain
-                      transition-transform
-                      duration-500
-                      ease-in-out
-                      group-hover:-translate-x-full
-                    "
-                  />
+  <div className="mt-8">
+    {course.learn.map((item, index) => {
+      const isLast = index === course.learn.length - 1;
 
-                  {/* SECOND IMAGE */}
-                  <Image
-                    src="/Courses/learn2.svg"
-                    alt=""
-                    fill
-                    className="
-                      absolute
-                      left-0
-                      top-0
-                      translate-x-full
-                      object-contain
-                      transition-transform
-                      duration-500
-                      ease-in-out
-                      group-hover:translate-x-0
-                    "
-                  />
-                </div>
+      return (
+        <div
+          key={index}
+          className="group flex min-h-[55px] cursor-default items-start gap-5"
+        >
+          {/* SVG ANIMATION */}
+          <div className="relative h-[55px] w-[40px] shrink-0 overflow-hidden">
+       
+{isLast ? (
+  <>
+    {/*  CIRCLE */}
+    <Image
+      src="/Courses/circle.svg"
+      alt=""
+      fill
+      className="
+        scale-[0.4]
+        object-contain
+        transition-transform
+        duration-500
+        ease-in-out
+        group-hover:-translate-x-full
+      "
+    />
 
-                {/* TEXT - SHIFTS RIGHT ON HOVER */}
-                <p
-                  className="
-                    pt-[4px]
-                    text-[16px]
-                    leading-[1.5]
-                    transition-transform
-                    duration-500
-                    ease-in-out
-                  group-hover:-translate-x-[6px]
-                    md:text-[17px]
-                  "
-                >
-                  {item}
-                </p>
-              </div>
-            ))}
+    {/* HOLLOW CIRCLE */}
+    <Image
+      src="/Courses/hollowcircle.svg"
+      alt=""
+      fill
+      className="
+        translate-x-full
+        scale-[0.4]
+        object-contain
+        transition-transform
+        duration-500
+        ease-in-out
+        group-hover:translate-x-0
+      "
+    />
+  </>
+) : (
+  <>
+    {/* FIRST SVG */}
+    <Image
+      src="/Courses/learn1.svg"
+      alt=""
+      fill
+      className="
+        object-contain
+        transition-transform
+        duration-500
+        ease-in-out
+        group-hover:-translate-x-full
+      "
+    />
+
+    {/* SECOND SVG */}
+    <Image
+      src="/Courses/learn2.svg"
+      alt=""
+      fill
+      className="
+        translate-x-full
+        object-contain
+        transition-transform
+        duration-500
+        ease-in-out
+        group-hover:translate-x-0
+      "
+    />
+  </>
+)}
+
           </div>
+
+          {/* TEXT - ALIGNED WITH SVG CIRCLE */}
+          <p
+            className="
+              mt-[15px]
+              text-[16px]
+              leading-[1.5]
+              transition-transform
+              duration-500
+              ease-in-out
+              group-hover:-translate-x-[6px]
+              md:text-[17px]
+            "
+          >
+            {item}
+          </p>
         </div>
+      );
+    })}
+  </div>
+</div>
+
 
         {/*= RIGHT FORM  */}
-        <div className="rounded-[12px] max-h-[580px] bg-white p-7 text-black shadow-lg md:p-9">
+        <div className="rounded-[12px] max-h-[520px] bg-white p-7 text-black shadow-lg md:p-9">
 
-          <h3 className="text-[27px] font-bold text-[#001B69]">
-            Request Information
+          <h3 className="text-[#00135C] font-bold text-[22px] lg:text-[28px] mb-6">
+            Request more Information
           </h3>
 
-          <p className="mt-2 text-[14px] text-gray-600">
-            Fill in your details and our team will contact you.
-          </p>
+       
 
           <form
             onSubmit={handleSubmit}
@@ -107,16 +147,7 @@ export default function WhatYouWillLearn({ course }: Props) {
               placeholder="Full Name"
               required
               className="
-                h-[48px]
-                w-full
-                rounded-[4px]
-                border
-                border-gray-300
-                px-4
-                text-[14px]
-                outline-none
-                transition
-                focus:border-[#2478E8]
+               w-full px-4 py-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 text-gray-700 text-[16px]
               "
             />
 
@@ -126,16 +157,7 @@ export default function WhatYouWillLearn({ course }: Props) {
               placeholder="Email Address"
               required
               className="
-                h-[48px]
-                w-full
-                rounded-[4px]
-                border
-                border-gray-300
-                px-4
-                text-[14px]
-                outline-none
-                transition
-                focus:border-[#2478E8]
+              w-full px-4 py-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 text-gray-700 text-[16px]
               "
             />
 
@@ -145,16 +167,7 @@ export default function WhatYouWillLearn({ course }: Props) {
               placeholder="Phone Number"
               required
               className="
-                h-[48px]
-                w-full
-                rounded-[4px]
-                border
-                border-gray-300
-                px-4
-                text-[14px]
-                outline-none
-                transition
-                focus:border-[#2478E8]
+               w-full px-4 py-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 text-gray-700 text-[16px]
               "
             />
 
@@ -163,17 +176,7 @@ export default function WhatYouWillLearn({ course }: Props) {
               placeholder="Your Message"
               rows={4}
               className="
-                w-full
-                resize-none
-                rounded-[4px]
-                border
-                border-gray-300
-                px-4
-                py-3
-                text-[14px]
-                outline-none
-                transition
-                focus:border-[#2478E8]
+               w-full px-4 py-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 text-gray-700 text-[16px]
               "
             />
 

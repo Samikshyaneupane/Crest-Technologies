@@ -57,7 +57,7 @@ export const courseData: Record<string, CourseData> = {
     shortDescription:
       "Master modern web development with ReactJS. Learn component-based architecture, state management, and build responsive applications.",
 
-    heroImage: "/courses/coursedetail.png",
+    heroImage: "/Courses/Coursedetail.png",
     learners: "1200+",
     rating: "4.5",
 
@@ -127,7 +127,7 @@ export const courseData: Record<string, CourseData> = {
     shortDescription:
       "Comprehensive QA training covering manual and automated testing with  Selenium, TestNG, and CI/CD integration",
 
-    heroImage: "/courses/coursedetail.png",
+    heroImage: "/Courses/Coursedetail.png",
     learners: "1000+",
     rating: "4.5",
 
@@ -197,7 +197,7 @@ export const courseData: Record<string, CourseData> = {
     shortDescription:
       "Develop practical project management skills and learn how to plan, organize, execute, monitor, and successfully deliver projects.",
 
-    heroImage: "/courses/p",
+    heroImage: "/Courses/Coursedetail.png",
     learners: "800+",
     rating: "4.5",
 
@@ -267,7 +267,7 @@ export const courseData: Record<string, CourseData> = {
     shortDescription:
       "Build essential cybersecurity skills and learn how to identify vulnerabilities, protect systems, secure networks, and respond to security threats.",
 
-    heroImage: "/courses/coursedetail.png",
+    heroImage: "/Courses/Coursedetail.png",
     learners: "900+",
     rating: "4.5",
 
@@ -338,7 +338,7 @@ export const courseData: Record<string, CourseData> = {
     shortDescription:
       "Learn data science, artificial intelligence, and machine learning through practical projects using Python and modern data technologies.",
 
-    heroImage: "/Courses/coursedetail.png",
+    heroImage: "/Courses/Coursedetail.png",
     learners: "1100+",
     rating: "4.5",
 
@@ -408,7 +408,7 @@ export const courseData: Record<string, CourseData> = {
     shortDescription:
       "Learn to build beautiful, high-performance cross-platform mobile applications for Android and iOS using Flutter and Dart.",
 
-    heroImage: "/Courses/coursedetaail.png",
+    heroImage: "/Courses/Coursedetail.png",
     learners: "850+",
     rating: "4.5",
 
@@ -477,7 +477,7 @@ export const courseData: Record<string, CourseData> = {
     shortDescription:
       "Learn to design intuitive digital products through user research, wireframing, prototyping, visual design, and user-centered design principles.",
 
-    heroImage: "/Courses/coursedetail.png",
+    heroImage: "/Courses/Coursedetail.png",
     learners: "950+",
     rating: "4.5",
 
@@ -545,7 +545,7 @@ export const courseData: Record<string, CourseData> = {
     shortDescription:
       "Master full-stack web development using MongoDB, Express.js, ReactJS, and Node.js and build complete production-ready web applications.",
 
-    heroImage: "/Courses/mern.png",
+    heroImage: "/Courses/Coursedetail.png",
     learners: "1200+",
     rating: "4.5",
 
@@ -615,7 +615,7 @@ export const courseData: Record<string, CourseData> = {
     shortDescription:
       "Learn server-side development, databases, REST APIs, authentication, and backend architecture to build secure and scalable applications.",
 
-    heroImage: "/Courses/backend.png",
+    heroImage: "/Courses/Coursedetail.png",
     learners: "900+",
     rating: "4.5",
 

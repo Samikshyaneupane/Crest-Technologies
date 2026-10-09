@@ -91,7 +91,7 @@ export default function CorporateTestimonials() {
       <div className="mx-auto max-w-[900px]">
 
         {/* TITLE */}
-        <h2 className="text-center text-[3px] font-bold text-[#001B69] md:text-[52px] mt-[10px]">
+        <h2 className="text-center text-[32px] font-bold text-[#001B69] md:text-[52px] mt-[10px]">
           Testimonials
         </h2>
 

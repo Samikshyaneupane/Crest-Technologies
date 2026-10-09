@@ -10,9 +10,9 @@ export default function CorporateHero() {
     <>
       {/*  CORPORATE HERO  */}
       <section className="w-full bg-white">
-        <div className="mx-auto flex min-h-[540px] max-w-[1500px] items-center px-4 py-2 lg:px-4">
+       <div className="mx-auto flex w-full min-h-[540px] max-w-[1500px] flex-col items-center px-4 py-2 lg:flex-row lg:px-4">
           {/* LEFT SIDE */}
-          <div className="w-[50%]">
+          <div className="w-full min-w-0 lg:w-[50%]">
          <h1 className="font-bold text-[#00135C] text-3xl md:text-4xl lg:text-5xl mt-4 mb-5">
   Empower Your  Workforce
   <br />
@@ -37,8 +37,8 @@ export default function CorporateHero() {
           </div>
 
           {/* RIGHT SIDE */}
-          <div className="-mr-8 flex w-[50%] items-center justify-start">
-            <div className="relative h-[600px] w-[600px] leading-[100%] translate-x-[38px] ">
+          <div className="flex w-full min-w-0 items-center justify-center lg:w-[50%] lg:justify-end">
+          <div className="relative h-[350px] w-full max-w-[600px] md:h-[450px] lg:h-[600px]">
               <Image
                 src="/corporate/corporateHero.png"
                 alt="Corporate Training"

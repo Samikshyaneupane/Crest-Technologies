@@ -3,7 +3,7 @@ import Image from "next/image";
 export default function CollegeResult() {
   return (
     <section className="w-full bg-white">
-      <div className="mx-auto grid min-h-[600px] max-w-[1500px] grid-cols-1 items-center gap-14 px-6 py-20 lg:grid-cols-[60%_40%] lg:px-10">
+      <div className="mx-auto grid w-full min-h-[600px] max-w-[1500px] grid-cols-1 items-center gap-14 px-6 py-20 lg:grid-cols-[60fr_40fr] lg:px-10">
 
         {/* LEFT SIDE */}
         <div>

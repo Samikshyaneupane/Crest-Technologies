@@ -88,7 +88,7 @@ export default function ContactHero() {
 
         {/* RIGHT IMAGE SLIDER */}
         <div className="flex items-center justify-center lg:pt-14">
-          <div className="w-full max-w-[500px]">
+          <div className="w-full max-w-[700px]">
 
             <div className="relative h-[500px] w-full overflow-hidden">
               {images.map((image, index) => (
@@ -100,7 +100,7 @@ export default function ContactHero() {
                   className={`object-cover transition-opacity duration-700 ${
                     current === index ? "opacity-100" : "opacity-0"
                   }`}
-                  sizes="(max-width: 1024px) 100vw, 500px"
+                  sizes="(max-width: 1024px) 100vw, 700px"
                 />
               ))}
             </div>

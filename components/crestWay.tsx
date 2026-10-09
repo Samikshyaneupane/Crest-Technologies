@@ -39,7 +39,9 @@ const crestAdvantage = [
   {
     image: "/crestad/crestad1.png",
     title: "LIVE OR PHYSICAL CLASSES",
-    text: "Attend classes as per your convenience online or physical. Online classes are scheduled at evening time for students or professionals' convenience.",
+    text:
+    <> Attend classes as per your convenience online or physical. Online classes are scheduled at evening time for students or professionals' 
+    <br/>convenience.    </>
   },
   {
     image: "/crestad/crestad2.png",
@@ -74,10 +76,10 @@ export default function CrestWay() {
     <section className="bg-[#f5f6f7] px-2 pt-16 pb-5">
 
       {/* Container for both cards */}
-        <div className="mx-auto -translate-x-[20px] flex max-w-[1200px] flex-col lg:min-h-[500px] lg:flex-row">
+      <div className="mx-auto flex w-full max-w-[1600px] flex-col lg:min-h-[500px] lg:flex-row">
 
         {/* Left - The Crest Way */}
-        <div className="rounded-md bg-[#ffc20e] px-9 py-10 lg:w-[40%]">
+     <div className="rounded-md bg-[#ffc20e] px-9 py-10 lg:w-[40%]">
 
           {/* Crest Way heading */}
           <h2 className="text-[32px] md:text-[40px] lg:text-[48px] font-bold mb-4 leading-tight tracking-[0%] text-[#292929] py-8">
@@ -91,42 +93,42 @@ export default function CrestWay() {
           </p>
 
           {/* Crest Way items */}
-          <div className="space-y-5">
+          <div className="space-y-8">
             {crestWay.map((item, index) => {
               const Icon = item.icon;
 
               return (
                 <div
                   key={index}
-                  className="flex items-start gap-[10px]"
+                  className="flex items-start gap-[20px]"
                 >
                   {/* Item icon */}
                   {item.image ? (
-                    <Image
-                      src={item.image}
-                      alt={item.title || "Crest Way"}
-                      width={18}
-                      height={18}
-                      className="mt-[2px] shrink-0 object-contain"
-                    />
+                  <Image
+  src={item.image}
+  alt={item.title || "Crest Way"}
+  width={30}
+  height={30}
+  className="mt-[2px] h-[30px] w-[30px] shrink-0 object-contain"
+/>
                   ) : Icon ? (
-                    <Icon
-                      size={18}
-                      strokeWidth={2}
-                      className="mt-[2px] shrink-0 text-black"
-                    />
+                   <Icon
+  size={30}
+  strokeWidth={2}
+  className="mt-[2px] shrink-0 text-black"
+/> 
                   ) : null}
 
                   {/* Item text */}
-                  <div>
-                    <h3 className="text-[18px] font-bold text-black">
-                      {item.title}
-                    </h3>
+                 <div>
+  <h3 className="font-bold text-base md:text-lg lg:text-[20px] leading-tight tracking-[0] text-[#292929] mb-[10px]">
+    {item.title}
+  </h3>
 
-                    <p className="mt-2 text-[14px] leading-5 text-black">
-                      {item.text}
-                    </p>
-                  </div>
+  <p className="font-normal text-base md:text-lg lg:text-[20px] leading-tight tracking-[0] text-[#292929]">
+    {item.text}
+  </p>
+</div>
                 </div>
               );
             })}
@@ -140,7 +142,7 @@ export default function CrestWay() {
         </div>
 
         {/* Right - The Crest Advantage */}
-        <div className="bg-white px-6 py-7 lg:w-[60%] lg:px-8">
+       <div className="bg-white px-6 py-7 lg:w-[60%] lg:px-8">
 
           {/* Crest Advantage heading */}
           <h2 className="text-[28px] md:text-[40px] lg:text-[48px] font-bold text-[#292929] leading-tight tracking-[0]">
@@ -158,18 +160,18 @@ export default function CrestWay() {
                 <Image
                   src={item.image}
                   alt={item.title || "Crest Advantage"}
-                  width={35}
-                  height={35}
-                  className="mt-1 shrink-0 object-contain"
+                  width={48}
+                  height={36}
+                  className="w-[48px] h-[36px] object-contain"
                 />
 
                 {/* Advantage text */}
                 <div>
-                  <h3 className="text-[18px] font-bold text-[#001b67]">
-                    {item.title}
-                  </h3>
+               <h3 className="font-bold text-[#00135C] leading-tight tracking-[0%] text-base md:text-lg lg:text-[20px] mb-[10px]">
+  {item.title}
+</h3>
 
-                  <p className="mt-2 text-[14px] leading-[1.55] text-black">
+                  <p className="text-base md:text-lg lg:text-[20px] font-normal leading-tight tracking-[0] text-[#292929]">
                     {item.text}
                   </p>
                 </div>

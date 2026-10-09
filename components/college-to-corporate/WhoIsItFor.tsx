@@ -84,7 +84,7 @@ export default function WhoIsItFor() {
                 </p>
 
                 {/* YELLOW DIVIDER */}
-                {index !== audiences.length  && (
+                {index !== audiences.length - 1 && (
                   <div
                     className="
                       absolute

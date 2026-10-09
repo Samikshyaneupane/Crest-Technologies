@@ -3,6 +3,7 @@
 import { useState } from "react";
 import Link from "next/link";
 import { Calendar, PlayCircle } from "lucide-react";
+import ScrollReveal from "./ScrollReveal";
 
 const courses = [
   {
@@ -55,11 +56,15 @@ export default function CourseCards() {
       {/* COURSES SECTION */}
       <section id="courses" className="scroll-mt-20 bg-white py-16">
         <div className="mx-auto grid max-w-[1500px] grid-cols-1 gap-3.5 px-4 sm:grid-cols-3">
-          {courses.map((course) => (
-            <div
-              key={course.title}
-              className="flex min-h-[220px] flex-col justify-between bg-[#DAEBFF] p-6"
-            >
+      {courses.map((course, index) => (
+  <ScrollReveal
+  key={course.title}
+  direction="left"
+  delay={(index % 3) * 100}
+  className="h-full"
+>
+    <div className="flex min-h-[220px] flex-col justify-between bg-[#DAEBFF] p-6">
+    
               {/* Course Info */}
               <div>
                 <h2 className="text-[28px] font-bold text-[#00135C] leading-[100%] tracking-[0%]">
@@ -109,8 +114,13 @@ export default function CourseCards() {
                 </button>
               </div>
             </div>
-          ))}
+        
+                   
+          </ScrollReveal>
+        ))}
         </div>
+
+      
 
         {/* Discover More */}
         <div className="flex justify-center pt-16">
@@ -227,6 +237,7 @@ hover:z-20"
             </form>
           </div>
         </div>
+        
       )}
     </>
   );

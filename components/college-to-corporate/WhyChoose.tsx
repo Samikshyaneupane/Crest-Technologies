@@ -21,7 +21,7 @@ export default function WhyChoose() {
         </h2>
 
         {/* CONTENT */}
-        <div className="mt-20 grid grid-cols-1 items-center gap-14 lg:grid-cols-[42%_58%]">
+       <div className="mt-20 grid grid-cols-1 items-center gap-14 lg:grid-cols-[42fr_58fr]">
 
           {/* LEFT IMAGE */}
           <div className="relative h-[350px] w-full overflow-hidden md:h-[500px]">
